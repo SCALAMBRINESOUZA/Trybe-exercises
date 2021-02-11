@@ -4,61 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Second Exercise</title>
+
+    <style>
+        h1{
+            font-size: 65px;
+            color: orange;
+        }
+
+        ul{
+            background-color: palegreen;
+        }
+
+        .alter{
+            background-color: slategray;
+        }
+
+    </style>
+
 </head>
 <body>
-    <ul>
-        <li><a href="#CamilaF">Camila Fabia</a></li>
-        <li><a href="#CarlosM">Carlos Margato</a></li>
-        <li><a href="#LucasP">Lucas Peixoto</a></li>
-        <li><a href="#TomS">Tom Santos</a></li>
-        <li><a href="#GustavoC">Gustavo Caetano</a></li>
-        <li><a href="#GiseleS">Gisele Santin</a></li>
-        <li><a href="#CamilaA">Camila Arruda</a></li>
-        <li><a href="#CarlosV">Carlos Vieira</a></li>
-        <li><a href="#CristianB">Cristian Bugs </a> </li>
-        
-    </ul>
-    <img src="data:image/png;base64,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" alt="Imagem adicionado com url externa">
+   
+   <h1>Exercicios 3.2</h1>
+   <p class="alter">Qual é a sua cor favorita?</p>
 
-    <img src="images/image_trybe.jpeg" alt="Imagem adicionado de forma interna">
-
-    <p id="camilaF"> Paragrafo referente a Camila Fabia Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti atque architecto nisi corrupti aut, corporis illum nemo explicabo harum laudantium blanditiis, alias ipsam reprehenderit porro minima! Nisi debitis porro eveniet.</p>
-    <br>
-    <br>
-    
-    <p id="CarlosM"> Paragrafo referente a Carlos Margato Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias corrupti dignissimos dolor, atque tenetur sunt praesentium! Fugiat, voluptatem odio asperiores et perspiciatis qui quia ducimus quas. Placeat vitae inventore corporis!</p>
-    <br>
-    <br>
-    
-    <p id="LucasP"> Paragrafo referente a Lucas Peixoto Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime similique quia tenetur voluptatibus, quisquam ducimus alias est delectus cumque doloremque quo? Ad laborum perferendis, soluta eaque consequatur ab ipsam ratione?</p>
-    <br>
-    <br>
-    
-    <p id="TomS"> Paragrafo referente a Tom Santos Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae unde natus labore doloribus amet veritatis explicabo dignissimos quas quibusdam! Consectetur ducimus, aliquam natus ipsum aspernatur qui exercitationem quaerat. Expedita, inventore.</p>
-    <br>
-    <br>
-    
-    <p id="GustavoC"> Paragrafo referente a Gustavo Caetano Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus laboriosam quod magnam officiis perspiciatis, similique provident soluta obcaecati a veritatis totam architecto cupiditate cumque molestiae harum nulla, expedita dolorem distinctio.</p>
-    <br>
-    <br>
-    
-    <p id="GiseleS"> Paragrafo referente a Gisele Santin Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus ab rerum, ipsa, repellat minus eum porro error vitae sapiente earum adipisci, aut nisi? Enim voluptatibus reiciendis, ullam necessitatibus minima corporis?</p>
-    <br>
-    <br>
-    
-    <p id="CamilaA"> Paragrafo referente a Camila Arruda Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo commodi magnam in hic architecto voluptates, dolore quisquam tempore deserunt unde possimus alias excepturi exercitationem distinctio vitae inventore eveniet. Sequi, earum.</p>
-    <br>
-    <br>
-    
-    <p id="CarlosV"> Paragrafo referente a Carlos Vieira Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum voluptates consequuntur magni quasi repellat saepe incidunt cupiditate, porro ab rem eaque fugiat eum architecto corrupti temporibus quae rerum? Nisi, optio!</p>
-    <br>
-    <br>
-    
-    <p id="CristianB"> Paragrafo referente a Cristian Bugs Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum voluptates consequuntur magni quasi repellat saepe incidunt cupiditate, porro ab rem eaque fugiat eum architecto corrupti temporibus quae rerum? Nisi, optio!</p>
-    <br>
-    <br>
-    
-    <a href="https://www.google.com/" target="a_blank">Site do Google</a>
+   <ul class="alter">
+       <li>Amarelo</li>
+       <li>Vermelho</li>
+       <li>Marrom</li>
+   </ul>
 
 </body>
 </html>
