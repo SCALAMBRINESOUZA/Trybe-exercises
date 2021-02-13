@@ -1,2 +1,1 @@
-Utilizar a linguagem de marcação endereçando a responsividade e a acessibilidade, utilizando métodos de aprendizagem de forma ativa!!!
-Acrescentando a segunda linha ao readme inicial
+Este é meu repositório para inclusao e alteração de exercicios no decorrer do curso na Trybe
