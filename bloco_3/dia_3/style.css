@@ -1,0 +1,32 @@
+.caixa{
+    color: white;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: top;
+    border: darkgray dashed;
+}
+
+.width-and-height{
+    height: 50px;
+    width: 50px;
+    background-color: rgba(13, 148, 13, 0.884);
+    border: outset;
+    
+}
+
+.padding{
+    padding: 20px;
+    background-color: purple;
+    border: double;
+}
+
+.margin{
+    margin: 30px;
+    background-color: gray;
+    border: groove;
+}
+.border{
+    border: 5px solid black;
+    background-color: darkblue;
+}
