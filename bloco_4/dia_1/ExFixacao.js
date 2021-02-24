@@ -1,2 +1,1 @@
-const name = "Carlos";
-const number = 10;
+const name = "Carlos Henrique"
