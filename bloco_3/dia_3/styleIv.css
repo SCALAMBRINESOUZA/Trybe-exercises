@@ -34,3 +34,27 @@ li em{
     color:palevioletred;
 }
     
+.alies li:nth-child(1) :hover{
+    font-weight: bold;
+    color: orange;
+}
+
+.alies li:nth-child(2) :hover{
+    font-weight: bold;
+    color: green;
+}
+
+.alies li:nth-child(3) :hover{
+    font-weight: bold;
+    color: black;
+}
+
+.alies li:nth-child(4) :hover{
+    font-weight: bold;
+    color: yellow;
+}
+
+.alies li:nth-child(5) :hover{
+    font-weight: bold;
+    color: green;
+}
