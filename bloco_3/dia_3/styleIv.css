@@ -18,3 +18,12 @@ ol li:nth-child(odd){
     font-size: 40px;
     border: solid 1px black;
 }
+
+li{
+  font-size: 20px;
+}
+
+li em{
+    font-weight: bold;
+}
+
