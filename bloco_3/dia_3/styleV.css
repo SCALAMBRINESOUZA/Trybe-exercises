@@ -41,6 +41,21 @@ h1 {
 
   h3{
     text-align: center;
+    
   }
   
-  
+  .ulInline li{
+    display: inline;
+         
+  }
+  #one{
+    margin-left: 320px;
+  }
+
+  #two{
+    margin-left: 320px;
+  }
+
+  #three{
+    margin-left: 320px;
+  }
