@@ -20,7 +20,7 @@ h1 {
     text-align: center;
     width: 300px;
     display: inline-block;
-    margin-left: 20%;
+    margin-left: 25%;
     
   }
 
@@ -39,5 +39,8 @@ h1 {
     list-style: none;
   }
 
+  h3{
+    text-align: center;
+  }
   
   
