@@ -1,5 +1,6 @@
 h1 {
     text-align: center;
+    
   }
 
   .first {
@@ -8,6 +9,8 @@ h1 {
     height: 50px;
     text-align: center;
     width: 200px;
+    margin-left: 530px;
+    
   }
 
   .second {
@@ -16,6 +19,9 @@ h1 {
     height: 50px;
     text-align: center;
     width: 300px;
+    display: inline-block;
+    margin-left: 20%;
+    
   }
 
   .third {
@@ -24,4 +30,14 @@ h1 {
     height: 50px;
     text-align: center;
     width: 300px;
+    display: inline-block;
+    
+    
   }
+
+  ul{
+    list-style: none;
+  }
+
+  
+  
