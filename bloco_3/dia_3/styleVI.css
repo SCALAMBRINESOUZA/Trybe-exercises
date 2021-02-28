@@ -81,3 +81,39 @@ p{
     
     
 }
+
+#bib{
+    font-size: 20px;
+    color:green;
+    text-align: center;
+    border: greenyellow 5px dashed;
+    padding: 5px;
+    text-decoration: none;
+    width: 50%;
+    
+}
+
+a{
+    text-decoration: none;
+}
+#navLinks a:hover{
+    color: white;
+    background-color: midnightblue;
+    font-size: 30px;
+}
+
+#bib a:nth-child(1n):hover{
+    background-color: yellow;
+    color: red;
+}
+
+#bib a:nth-child(2):hover{
+    background-color:red;
+    color: yellow;
+}
+
+#bib a:nth-child(3n):hover{
+    background-color:green;
+    color:white;
+}
+
