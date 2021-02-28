@@ -24,12 +24,14 @@ article{
 h2{
     color: royalblue;
     text-align: center;
+    
 }
 
-h1{
+ h1{
     text-align: center;
     font-size: 35px;
-    color: darkblue;
+    color: blueviolet;
+    text-decoration: underline;
     
     
 }
@@ -115,5 +117,26 @@ a{
 #bib a:nth-child(3n):hover{
     background-color:green;
     color:white;
+}
+
+h4{
+    color: cadetblue;
+    margin-left: 750px;
+    
+}
+
+#art{
+    max-width: 550px;
+    padding: 5px;
+    margin-top: -270px;
+    
+}
+
+iframe{
+    margin-left: 700px;
+    
+}
+#About{
+    margin-top: 80px;
 }
 
