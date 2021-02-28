@@ -1,11 +1,35 @@
-#navLinks{
+body{
+    background-color: khaki;
+}
+
+#navLinks a{
     display: inline;
     margin: 40px;
-    padding: 20px;
     background-color: burlywood;
-    font-size: 30px;
-    width: 80%;
+    font-size: 20px;
+   
+}
+
+article{
+    padding: 20px;
+}
+
+h2{
+    color: royalblue;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 35px;
+    color: darkblue;
     
     
-    
+}
+
+p{
+    font-family:monospace;
+    width: 100%;
+    color:brown;
+
 }
