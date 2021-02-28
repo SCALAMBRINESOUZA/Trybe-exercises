@@ -14,6 +14,7 @@ body{
     background-color: darkseagreen;
     height: 30px;
     padding: 30px;
+    width: 100%;
 }
 
 article{
@@ -47,3 +48,36 @@ p{
     
 }
 
+#second img{
+    width: 200px;
+    float: right;
+}
+
+
+#third img{
+    width: 200px;
+    float: left;
+    padding: 5px;
+    
+}
+#third p{
+    padding-bottom: 70px;
+    padding-top: 30px;
+    
+    
+}
+
+#fourth img{
+    width: 200px;
+    float: right;
+    padding: 5px;
+    padding-right: 40px;
+    
+}
+
+#fourth p{
+    padding-bottom: 70px;
+    padding-top: 30px;
+    
+    
+}
