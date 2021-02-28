@@ -4,10 +4,16 @@ body{
 
 #navLinks a{
     display: inline;
-    margin: 40px;
-    background-color: burlywood;
-    font-size: 20px;
-   
+    margin: 170px;
+    font-size: 22px;
+    
+ 
+}
+
+#nav{
+    background-color: darkseagreen;
+    height: 30px;
+    padding: 30px;
 }
 
 article{
@@ -34,9 +40,10 @@ p{
 
 }
 
-table, th, td {
+#table, th, td {
     width: 100%;   
     padding: 10px;
     border: darkcyan solid 3px;
     
 }
+
