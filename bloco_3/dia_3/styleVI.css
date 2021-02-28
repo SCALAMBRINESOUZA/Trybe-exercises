@@ -33,3 +33,10 @@ p{
     color:brown;
 
 }
+
+table, th, td {
+    width: 100%;   
+    padding: 10px;
+    border: darkcyan solid 3px;
+    
+}
