@@ -1,6 +1,6 @@
 let side_a = 60;
 let side_b = 60;
-let side_c = -60;
+let side_c = 70;
 let triangle = (side_a + side_b) + side_c;
 
 

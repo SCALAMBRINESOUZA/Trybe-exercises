@@ -1,20 +1,25 @@
-let peca = "RAINHA";
+ let chessPiece = 'rainha';
 
-if(peca == "PEAO"){
-    console.log(peca.toLocaleLowerCase() + " movimente-se em frente");
-}
-else if (peca == "TORRE") {
-    console.log(peca.toLocaleLowerCase() + " movimente-se em linha reta na vertical ou na horizontal");
-}
- else if (peca == "CAVALO"){
-     console.log(peca.toLocaleLowerCase() + " movimente-se duas casas na horizontal e uma na vertical, ou duas na vertical e uma na horizontal")
- }   
- else if(peca == "BISPOS"){
-    console.log(peca.toLocaleLowerCase() + " movimente-se em diagonal")
-     
- }   
-else if (peca == "RAINHA" || peca == "REI"){
-    console.log(peca.toLocaleLowerCase() + " movimento liberado")
- 
-}
-    
+switch (chessPiece.toLowerCase()) {
+    case 'rei':
+      console.log('Rei-> Uma casa apenas para qualquer direção.');
+      break;
+    case 'bispo':
+      console.log('Bispo-> Diagonal.');
+      break;
+    case 'rainha':
+      console.log('Rainha-> Diagonal, horizontal e vertical.');
+      break;
+    case 'cavalo':
+      console.log('Cavalo -> "L" pode pular sobre as peças.');
+      break;
+    case 'torre':
+      console.log('Torre -> Horizontal e vertical.');
+      break;
+    case 'peão':
+      console.log("Peão -> Apenas uma casa para frente, no primeiro movimento podem ser duas casas.");
+      break;
+    default:
+      console.log('Erro, peça inválida!');
+      break;
+  };
