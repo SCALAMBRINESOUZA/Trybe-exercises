@@ -1,1 +1,1 @@
-Este é meu repositório para inclusao e alteração de exercicios no decorrer do curso na Trybe
+Seja bem vindo ao repositório de Carlos Henrique Scalambrine de Souza, usado para versionamento de códigos de exercicios propostos pela trybe subdividido em blocos!!! 
