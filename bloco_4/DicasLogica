@@ -18,3 +18,10 @@ Diga nao posso
 }senao(IrAoEspelho){
 	pronto.true
 };
+
+
+para pegar o valor de um objeto coloca dentro de colchetes a variavel criada dentro do for in, para trazer o nome da chave chamamos o valor da variavel declarada no for in separado por virgula chamando nome do objeto mais a variavel interna exemplo sintaxe 
+estudante objeto
+for(let key in estudante){
+   console.log(key, estudante[key])		
+}
