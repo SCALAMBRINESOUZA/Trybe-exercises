@@ -1,4 +1,3 @@
-let objetc1 = [];
 
 let info = {
     personagem: 'Margarida',
@@ -18,6 +17,10 @@ let info2 = {
 
 
   for (let valores in info2){
+      if (info.recorrente === info2.recorrente) {
+       info.recorrente = "";
+       info2.recorrente = "Ambos recorrentes"
+      }
         console.log(`${info[valores]} e ${info2[valores]}`)
     }
     
