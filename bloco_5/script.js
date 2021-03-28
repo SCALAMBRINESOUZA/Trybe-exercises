@@ -9,3 +9,12 @@ let secondParagraph = document.querySelector('#second-paragraph');
 
 let subTitle = document.querySelector('#subtitle');
     subTitle.innerText = 'Let´s go learn javascript'    
+    subTitle = document.getElementsByTagName('h4')[0];
+    subTitle.innerText = 'Let´s go learn html css and javascript' 
+
+let paragraphs = document.getElementsByClassName('par');
+for (let index = 0; index < paragraphs.length; index += 1) {
+    paragraphs[index].style.color = 'blue' 
+    paragraphs[0].style.background = 'gray' 
+}    
+
