@@ -18,5 +18,15 @@ for (let i = 0; i < firstsh3.length; i += 1) {
     secondh3[3].style.background = 'black'
 }
 
-let footer = document.querySelector('#footer-container div').style.background = 'green'
+let footer = document.querySelector('#footer-container').style.background = 'green'
+
+let p = document.createElement('p')
+p.innerText = 'Administrador de tempo finalizado.'
+p.id = 'par'
+document.body.appendChild(p)
+
+
+
+
+
 
