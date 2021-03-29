@@ -7,4 +7,15 @@ mainContainer.style.background = "rgb(76,164,109)";
 whiteContainer = document.querySelector('.center-content');
 whiteContainer.style.background = 'white';
 
-hedH1 = document.getElementsByTagName('h1')[0].innerText = 'Exercício 5.1 - Javascripit'
+headH1 = document.getElementsByTagName('h1')[0].innerText = 'Exercício 5.1 - Javascripit'
+
+thirdParagraph = document.getElementsByTagName('p')[2]
+thirdParagraph.innerText = thirdParagraph.innerText.toUpperCase();
+
+function allParagraphs() {
+ let paragraphs = document.getElementsByTagName('p')
+    for (let par of paragraphs) {
+        console.log(par.innerText);
+    }
+}
+allParagraphs();
