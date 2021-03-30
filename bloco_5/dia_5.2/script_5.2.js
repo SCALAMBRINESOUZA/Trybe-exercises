@@ -34,11 +34,13 @@ secondChildContainer.appendChild(image);
  
 const numbersOfLists = ['UM', 'DOIS', 'TRES', 'QUATRO', 'CINCO', 'SEIS', 'SETE', 'OITO', 'NOVE', 'DEZ'];
 const list = document.createElement('ul');
+let itemList = 0;
 for(let item = 0; item < numbersOfLists.length; item += 1) {
-    let itemList = document.createElement('li');
+    itemList = document.createElement('li');
     itemList.innerText = numbersOfLists[item];
     list.appendChild(itemList);
     thirdChildContainer.appendChild(list);
+    
 };
 
 for(let h3s = 1; h3s < 4; h3s += 1) {
@@ -47,3 +49,9 @@ for(let h3s = 1; h3s < 4; h3s += 1) {
     dadContainer.appendChild(subtitle);
 }
     
+/*  Removendo os ultimos dois elementos da lista 
+
+ list.lastChild.remove();
+ list.lastChild.remove();
+
+ */
