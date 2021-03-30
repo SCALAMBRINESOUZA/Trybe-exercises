@@ -14,3 +14,8 @@ dadContainer.appendChild(childContainer);
 const paragraph = document.createElement('p');
 paragraph.innerText = 'I´m a student tryber';
 childContainer.appendChild(paragraph);
+
+const secondChildContainer = document.createElement('div');
+secondChildContainer.setAttribute('class', 'left-content');
+dadContainer.appendChild(secondChildContainer);
+
