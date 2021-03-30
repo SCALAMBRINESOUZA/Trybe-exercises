@@ -22,3 +22,8 @@ dadContainer.appendChild(secondChildContainer);
 const thirdChildContainer = document.createElement('div');
 thirdChildContainer.setAttribute('class', 'right-content');
 dadContainer.appendChild(thirdChildContainer);
+
+const image = document.createElement('img');
+image.setAttribute('class', 'small-image');
+image.src="https://picsum.photos/200";
+secondChildContainer.appendChild(image);
