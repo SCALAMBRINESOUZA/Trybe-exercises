@@ -1,6 +1,10 @@
+/*          alteraçoes de remoçao foram feitas diretas no 
+          console portanto sem efeito apos a atualizaçao da pagina'
+*/
+
 const title = document.createElement('h1');
 title.innerText = ' Exercício 5.2 - JavaScript DOM';
-title.setAttribute('class', 'headers');
+title.setAttribute('class', 'title');
 document.body.appendChild(title);    
 
 const dadContainer = document.createElement('div'); 
@@ -30,14 +34,24 @@ secondChildContainer.appendChild(image);
  
 const numbersOfLists = ['UM', 'DOIS', 'TRES', 'QUATRO', 'CINCO', 'SEIS', 'SETE', 'OITO', 'NOVE', 'DEZ'];
 const list = document.createElement('ul');
+let itemList = 0;
 for(let item = 0; item < numbersOfLists.length; item += 1) {
-    let itemList = document.createElement('li');
+    itemList = document.createElement('li');
     itemList.innerText = numbersOfLists[item];
     list.appendChild(itemList);
     thirdChildContainer.appendChild(list);
+    
 };
 
 for(let h3s = 1; h3s < 4; h3s += 1) {
-    const subtitle = document.createElement('h3');    
+    const subtitle = document.createElement('h3');  
+    subtitle.setAttribute('class', 'description')  
     dadContainer.appendChild(subtitle);
 }
+    
+/*  Removendo os ultimos dois elementos da lista 
+
+ list.lastChild.remove();
+ list.lastChild.remove();
+
+ */
