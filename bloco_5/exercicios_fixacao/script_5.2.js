@@ -19,3 +19,6 @@ const secondChildContainer = document.createElement('div');
 secondChildContainer.setAttribute('class', 'left-content');
 dadContainer.appendChild(secondChildContainer);
 
+const thirdChildContainer = document.createElement('div');
+thirdChildContainer.setAttribute('class', 'right-content');
+dadContainer.appendChild(thirdChildContainer);
