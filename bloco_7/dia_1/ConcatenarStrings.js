@@ -1,3 +1,3 @@
-const change = () => {
-    
+const changeString = (string) => {
+  
 }
