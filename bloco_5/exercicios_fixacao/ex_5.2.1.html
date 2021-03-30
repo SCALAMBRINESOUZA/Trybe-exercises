@@ -16,18 +16,26 @@
       let brotherCreate = document.createElement('span')
       brotherCreate.innerText = 'Irmão adotado ou criado he he he'
       createSibling.appendChild(brotherCreate)
+      createSibling.removeChild(brotherCreate);
+      createSibling.lastElementChild.remove();
+      createSibling.firstElementChild.remove();
+      createSibling.lastElementChild.remove();
+
 
       let createchild = document.querySelector('#elementoOndeVoceEsta')
       let sonCreate = document.createElement('h1')
       sonCreate.innerText = 'Onde você esta papai'
       createchild.appendChild(sonCreate)
+      createchild.nextSibling.remove();
+      createchild.lastElementChild.remove();
+      createchild.removeChild(segundoEUltimoFilhoDoFilho);
+
 
       let createfchild = document.querySelector('#primeiroFilhoDoFilho')
       let girlCreate = document.createElement('h2')
       girlCreate.innerText = 'Papai cade o vovô'
       girlCreate.id = 'cdr'
       createfchild.appendChild(girlCreate)
-      
-
-
-  </script>
+      createfchild.removeChild(cdr);
+         
+</script>
