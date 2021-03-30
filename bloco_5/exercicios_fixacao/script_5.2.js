@@ -27,3 +27,12 @@ const image = document.createElement('img');
 image.setAttribute('class', 'small-image');
 image.src="https://picsum.photos/200";
 secondChildContainer.appendChild(image);
+ 
+// const numbersOfLists = ['UM', 'DOIS', 'TRES', 'QUATRO', 'CINCO', 'SEIS', 'SETE', 'OITO', 'NOVE', 'DEZ'];
+// const list = document.createElement('ul');
+// for(let item = 0; item < numbersOfLists.length; item += 1) {
+//     let itemList = document.createElement('li');
+//     itemList = numbersOfLists[itemList].innerText;
+//     list.appendChild(itemList);
+// }
+// thirdChildContainer.appendChild(list);
