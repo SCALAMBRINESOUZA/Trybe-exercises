@@ -11,3 +11,6 @@ const childContainer = document.createElement('div');
 childContainer.setAttribute('class', 'center-content');
 dadContainer.appendChild(childContainer);
 
+const paragraph = document.createElement('p');
+paragraph.innerText = 'I´m a student tryber';
+childContainer.appendChild(paragraph);
