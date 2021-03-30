@@ -47,6 +47,32 @@
 
 // technologies = ['Javascript', 'CSS', 'HTML', 'React']
 // console.log(technologies); // Erro
+    /*
+                                Definições de variaveis
+--------------------------------------------------------------------------------------------------- 
+                                                                                                    */
+// sem template literals //
+// const myName = "Isabella"
+// console.log('Hello' + ' ' + myName + '!');
+
+// com template literals //
+// const myName = "Isabella"
+// console.log(`Welcome ${myName}!`);
+
+// Com o template literals
+// console.log(`Primeira linha;
+// Segunda linha;
+// Terceira linha;`
+// )
+// console.log(``)
+// // Sem o template literals:
+// console.log('Primeira linha;\n' + 'Segunda linha;\n' + 'Terceira linha;\n')
+
+
+
+
+
+
 
 
 
