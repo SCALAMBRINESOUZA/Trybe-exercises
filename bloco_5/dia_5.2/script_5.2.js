@@ -1,6 +1,6 @@
 const title = document.createElement('h1');
 title.innerText = ' Exercício 5.2 - JavaScript DOM';
-title.setAttribute('class', 'headers');
+title.setAttribute('class', 'title');
 document.body.appendChild(title);    
 
 const dadContainer = document.createElement('div'); 
@@ -41,3 +41,4 @@ for(let h3s = 1; h3s < 4; h3s += 1) {
     const subtitle = document.createElement('h3');    
     dadContainer.appendChild(subtitle);
 }
+    
