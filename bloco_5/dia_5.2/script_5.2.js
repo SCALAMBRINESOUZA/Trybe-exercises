@@ -1,3 +1,7 @@
+/*          alteraçoes de remoçao foram feitas diretas no 
+          console portanto sem efeito apos a atualizaçao da pagina'
+*/
+
 const title = document.createElement('h1');
 title.innerText = ' Exercício 5.2 - JavaScript DOM';
 title.setAttribute('class', 'title');
