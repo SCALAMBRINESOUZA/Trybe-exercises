@@ -28,11 +28,16 @@ image.setAttribute('class', 'small-image');
 image.src="https://picsum.photos/200";
 secondChildContainer.appendChild(image);
  
-// const numbersOfLists = ['UM', 'DOIS', 'TRES', 'QUATRO', 'CINCO', 'SEIS', 'SETE', 'OITO', 'NOVE', 'DEZ'];
-// const list = document.createElement('ul');
-// for(let item = 0; item < numbersOfLists.length; item += 1) {
-//     let itemList = document.createElement('li');
-//     itemList = numbersOfLists[itemList].innerText;
-//     list.appendChild(itemList);
-// }
-// thirdChildContainer.appendChild(list);
+const numbersOfLists = ['UM', 'DOIS', 'TRES', 'QUATRO', 'CINCO', 'SEIS', 'SETE', 'OITO', 'NOVE', 'DEZ'];
+const list = document.createElement('ul');
+for(let item = 0; item < numbersOfLists.length; item += 1) {
+    let itemList = document.createElement('li');
+    itemList.innerText = numbersOfLists[item];
+    list.appendChild(itemList);
+    thirdChildContainer.appendChild(list);
+};
+
+for(let h3s = 1; h3s < 4; h3s += 1) {
+    const subtitle = document.createElement('h3');    
+    dadContainer.appendChild(subtitle);
+}
