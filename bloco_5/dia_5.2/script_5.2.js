@@ -38,7 +38,8 @@ for(let item = 0; item < numbersOfLists.length; item += 1) {
 };
 
 for(let h3s = 1; h3s < 4; h3s += 1) {
-    const subtitle = document.createElement('h3');    
+    const subtitle = document.createElement('h3');  
+    subtitle.setAttribute('class', 'description')  
     dadContainer.appendChild(subtitle);
 }
     
