@@ -17,4 +17,3 @@ for (let index = 0; index < paragraphs.length; index += 1) {
     paragraphs[index].style.color = 'blue' 
     paragraphs[0].style.background = 'gray' 
 }    
-
