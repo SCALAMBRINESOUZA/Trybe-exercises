@@ -1,3 +1,4 @@
+const skills = ['Desenvolvimento', 'Proefiencia', 'Colaborativo', 'Persistencia', 'Ativo']
 const changeString = (string) => {
   let phrase = []
   let ph, res = ''
@@ -8,7 +9,7 @@ const changeString = (string) => {
           res = `Tryber ${ph} aqui`  
           return res;
           
-      
+           
        
    
      
