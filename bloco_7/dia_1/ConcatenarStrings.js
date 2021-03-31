@@ -6,6 +6,7 @@ const changeString = (string) => {
        phrase.includes('x') 
          ph = string
           res = `Tryber ${ph} aqui`  
+          return res;
           
       
        
