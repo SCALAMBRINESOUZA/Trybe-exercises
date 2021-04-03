@@ -15,9 +15,10 @@ function createDaysOfTheWeek() {
   
   const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];;
 
-const diasMes = () => {
   const days = document.getElementById('days');
 
+const diasMes = () => {
+  
   for(let day = 0; day < dezDaysList.length; day += 1 ) {
       const daysMonth = dezDaysList[day];
       const daysItem = document.createElement('li');
@@ -44,11 +45,12 @@ const diasMes = () => {
 
     const btn = document.querySelector('.buttons-container');
     const btnHoliday = document.createElement('button');
- const holidays = (feriados) => {
+ 
+const holidays = (feriados) => {
     btnHoliday.setAttribute('id', 'btn-holiday');
     btnHoliday.textContent = feriados
     btn.appendChild(btnHoliday)
- }
+ 
 
     btnHoliday.addEventListener('click', () => {
         const holidays = document.querySelectorAll('.holiday');
@@ -62,11 +64,14 @@ const diasMes = () => {
             }
         }
     })    
-       const daysFridays = [4, 11, 18, 25 ]; 
+ }
+const fridayss = (sextas) => {
        const btnFriday = document.createElement('button');
-       btnFriday.textContent = 'Sexta-Feira';
+       btnFriday.textContent = sextas;
        btn.appendChild(btnFriday);
-    btnFriday.addEventListener('click', () => {
+    
+       const daysFridays = [4, 11, 18, 25 ]; 
+       btnFriday.addEventListener('click', () => {
       const fridays = document.querySelectorAll('.friday');
       for(let i = 0; i < fridays.length; i += 1) {
         if (fridays[i].innerHTML !== 'Sextou') {
@@ -77,7 +82,28 @@ const diasMes = () => {
         
       }  
     })   
-    
+
+}
+
+const moreZoom = () => {
+        days.addEventListener('mouseover', (el) => {
+            el.target.style.fontSize = '30px';
+            el.target.style.fontWeight = '600';
+        })             
+    }  
+
+
+const outZoom = () => {
+        days.addEventListener('mouseout', (el) => {
+            el.target.style.fontSize = '20px';
+            el.target.style.fontWeight = '200';
+        })
+
+    }
+
+
+    fridayss('Sexta-Feira')
     diasMes();
     holidays('Feriados');
-    
+    moreZoom();
+    outZoom();
