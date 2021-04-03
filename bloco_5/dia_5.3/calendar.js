@@ -25,9 +25,18 @@ const diasMes = () => {
       daysItem.innerHTML = daysMonth;
       days.appendChild(daysItem);
 
-      if (daysItem.innerHTML == 24 || daysItem.innerHTML == 25 || daysItem.innerHTML == 31) {
+      if (daysItem.innerHTML == 24 || daysItem.innerHTML == 31) {
           daysItem.setAttribute('class', 'day holiday');   
-      }
+        }
+ 
+      if (daysItem.innerHTML == 4 || daysItem.innerHTML == 11 || daysItem.innerHTML == 18) {
+          daysItem.setAttribute('class', 'day friday');  
+        }
+        
+      if (daysItem.innerHTML == 25) {
+          daysItem.setAttribute('class', 'day holiday friday');
+      }  
+  
   }
 
 }
