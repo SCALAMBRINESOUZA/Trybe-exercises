@@ -40,4 +40,13 @@ const diasMes = () => {
   }
 
 }
+
+    const btn = document.querySelector('.buttons-container');
+const holidays = (feriados) => {
+    const btnHoliday = document.createElement('button');
+    btnHoliday.setAttribute('id', 'btn-holiday');
+    btnHoliday.textContent = feriados
+    btn.appendChild(btnHoliday)
+}
     diasMes();
+    holidays('Feriados');
