@@ -25,6 +25,7 @@ const diasMes = () => {
       daysItem.innerHTML = daysMonth;
       days.appendChild(daysItem);
 
+      
       if (daysItem.innerHTML == 24 || daysItem.innerHTML == 31) {
           daysItem.setAttribute('class', 'day holiday');   
         }
@@ -36,17 +37,31 @@ const diasMes = () => {
       if (daysItem.innerHTML == 25) {
           daysItem.setAttribute('class', 'day holiday friday');
       }  
-  
+     
   }
 
 }
 
     const btn = document.querySelector('.buttons-container');
-const holidays = (feriados) => {
     const btnHoliday = document.createElement('button');
+ const holidays = (feriados) => {
     btnHoliday.setAttribute('id', 'btn-holiday');
     btnHoliday.textContent = feriados
     btn.appendChild(btnHoliday)
-}
+ }
+
+    btnHoliday.addEventListener('click', () => {
+        const holidays = document.querySelectorAll('.holiday');
+        for(let i = 0; i < holidays.length; i += 1){
+            if (holidays[i].style.backgroundColor === 'gray') {
+                holidays[i].style.backgroundColor = '#eee';
+                holidays[i].style.color = 'gray'
+            } else {
+                holidays[i].style.backgroundColor = 'gray';
+                holidays[i].style.color = 'green'
+            }
+        }
+    })    
+ 
     diasMes();
     holidays('Feriados');
