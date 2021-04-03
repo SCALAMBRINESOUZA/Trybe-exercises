@@ -65,7 +65,7 @@ const holidays = (feriados) => {
         }
     })    
  }
-const fridayss = (sextas) => {
+const fridays = (sextas) => {
        const btnFriday = document.createElement('button');
        btnFriday.textContent = sextas;
        btn.appendChild(btnFriday);
@@ -101,9 +101,20 @@ const outZoom = () => {
 
     }
 
+    const myTasks = document.querySelector('.my-tasks');
+    const elSpan = document.createElement('span');
 
-    fridayss('Sexta-Feira')
+    const tasks = (tarefa) => {
+        elSpan.innerHTML = tarefa;
+        elSpan.style.color = 'blue';
+        elSpan.style.fontSize = '40px';
+        myTasks.appendChild(elSpan);
+    }
+
+    
+    fridays('Sexta-Feira')
     diasMes();
     holidays('Feriados');
     moreZoom();
     outZoom();
+    tasks('Projetos')
