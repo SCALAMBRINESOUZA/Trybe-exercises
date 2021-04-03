@@ -62,6 +62,22 @@ const diasMes = () => {
             }
         }
     })    
- 
+       const daysFridays = [4, 11, 18, 25 ]; 
+       const btnFriday = document.createElement('button');
+       btnFriday.textContent = 'Sexta-Feira';
+       btn.appendChild(btnFriday);
+    btnFriday.addEventListener('click', () => {
+      const fridays = document.querySelectorAll('.friday');
+      for(let i = 0; i < fridays.length; i += 1) {
+        if (fridays[i].innerHTML !== 'Sextou') {
+            fridays[i].innerHTML = 'Sextou';
+        } else {
+            fridays[i].innerHTML = daysFridays[i]
+        }          
+        
+      }  
+    })   
+    
     diasMes();
     holidays('Feriados');
+    
