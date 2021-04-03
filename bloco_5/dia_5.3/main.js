@@ -56,3 +56,7 @@ divTres.addEventListener('selectstart', () => {
 myWebpage.addEventListener('dblclick', () => {
 	location.href="https://scalambrinesouza.github.io/"; 
 });
+
+myWebpage.addEventListener('mouseover', () => {
+	myWebpage.style.color = 'red';
+})
