@@ -53,4 +53,6 @@ divTres.addEventListener('selectstart', () => {
 	divDois.removeAttribute('class');
 });
 
-
+myWebpage.addEventListener('dblclick', () => {
+	location.href="https://scalambrinesouza.github.io/"; 
+});
