@@ -26,8 +26,7 @@ const diasMes = () => {
       daysItem.innerHTML = daysMonth;
       days.appendChild(daysItem);
 
-      
-      if (daysItem.innerHTML == 24 || daysItem.innerHTML == 31) {
+       if (daysItem.innerHTML == 24 || daysItem.innerHTML == 31) {
           daysItem.setAttribute('class', 'day holiday');   
         }
  
@@ -110,30 +109,86 @@ const outZoom = () => {
         elSpan.style.fontSize = '40px';
         myTasks.appendChild(elSpan);
     }
+   
+    const newTaskDiv = (color) => {
+        const divColor = document.createElement('div');
 
-    const legend = (cor) => {
-       const elDiv = document.createElement('div');
-       elDiv.style.backgroundColor = cor;
-       elDiv.setAttribute('class', 'task')
-       myTasks.appendChild(elDiv); 
-       
-       elDiv.addEventListener('click', () => {
-           if (elDiv.className == 'selected') {
-             elDiv.className = 'task';   
-           } else {
-               elDiv.className = 'selected';
-           } 
-       })
+        divColor.setAttribute('class', 'task');
+        divColor.style.backgroundColor = color;
+        myTasks.appendChild(divColor);
     }
 
 
+    const setTaskClass = () => {
+        const selectedTask = document.getElementsByClassName('task selected');
+        const myTask = document.querySelector('.task');
 
+        myTasks.addEventListener('click', (event) => {
+            if (selectedTask.length == 0) {
+                event.target.className = 'task selected';
+            } else {
+                event.target.className = 'task';
+            }      
+        })
+    }
     
+        const sedDayColor = () => {
+            const selectedTask = document.getElementsByClassName('task selected');
+            const days = document.querySelector('#days');
+            const taskDiv = document.querySelector('.task');
+            const taskColor = taskDiv.style.backgroundColor;
+
+            days.addEventListener('click', (event) => {
+                let eventTargetColor = event.target.style.backgroundColor;
+                if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
+                    let color = selectedTask[0].style.backgroundColor;
+                    event.target.style.color = color;
+                } else if (eventTargetColor === taskColor && selectedTask.length !== 0) {
+                    event.target.style.color = 'rgb(119,119,119)';
+                }
+            });
+        };
+
+
+        const commitments = () => {
+            const input = document.getElementById('task-input');
+            const listCommitment = document.querySelector('.task-list');
+            const btnAdd = document.querySelector('#btn-add') 
+           
+            btnAdd.addEventListener('click', () => {
+                if (input.value.length > 0) {
+                    let itemList = document.createElement('li');
+                    itemList.innerText = input.value;
+
+                    listCommitment.appendChild(itemList);
+                    input.value = "";
+                } else {
+                    alert('erro ao clicar em ADICIONAR.');
+                  
+                }
+                
+            })
+        
+
+             input.addEventListener('keyup', (event) => {
+              if (event.KeyCode === 13 && input.value.length > 0) {
+                let itemList = document.createElement('li');
+                itemList.innerText = input.value;
+
+                listCommitment.appendChild(itemList);
+                input.value = "";
+              }
+          });  
+   };
+    
+
     fridays('Sexta-Feira');
     diasMes();
     holidays('Feriados');
     moreZoom();
     outZoom();
     tasks('Projetos');
-    legend('blue');
-    
+    newTaskDiv('green')
+    setTaskClass();
+    sedDayColor();
+    commitments();
