@@ -26,8 +26,7 @@ const diasMes = () => {
       daysItem.innerHTML = daysMonth;
       days.appendChild(daysItem);
 
-      
-      if (daysItem.innerHTML == 24 || daysItem.innerHTML == 31) {
+       if (daysItem.innerHTML == 24 || daysItem.innerHTML == 31) {
           daysItem.setAttribute('class', 'day holiday');   
         }
  
@@ -65,7 +64,7 @@ const holidays = (feriados) => {
         }
     })    
  }
-const fridayss = (sextas) => {
+const fridays = (sextas) => {
        const btnFriday = document.createElement('button');
        btnFriday.textContent = sextas;
        btn.appendChild(btnFriday);
@@ -101,9 +100,95 @@ const outZoom = () => {
 
     }
 
+    const myTasks = document.querySelector('.my-tasks');
+    
+    const tasks = (tarefa) => {
+        const elSpan = document.createElement('span');
+        elSpan.innerHTML = tarefa;
+        elSpan.style.color = 'blue';
+        elSpan.style.fontSize = '40px';
+        myTasks.appendChild(elSpan);
+    }
+   
+    const newTaskDiv = (color) => {
+        const divColor = document.createElement('div');
 
-    fridayss('Sexta-Feira')
+        divColor.setAttribute('class', 'task');
+        divColor.style.backgroundColor = color;
+        myTasks.appendChild(divColor);
+    }
+
+
+    const setTaskClass = () => {
+        const selectedTask = document.getElementsByClassName('task selected');
+        const myTask = document.querySelector('.task');
+
+        myTasks.addEventListener('click', (event) => {
+            if (selectedTask.length == 0) {
+                event.target.className = 'task selected';
+            } else {
+                event.target.className = 'task';
+            }      
+        })
+    }
+    
+        const sedDayColor = () => {
+            const selectedTask = document.getElementsByClassName('task selected');
+            const days = document.querySelector('#days');
+            const taskDiv = document.querySelector('.task');
+            const taskColor = taskDiv.style.backgroundColor;
+
+            days.addEventListener('click', (event) => {
+                let eventTargetColor = event.target.style.backgroundColor;
+                if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
+                    let color = selectedTask[0].style.backgroundColor;
+                    event.target.style.color = color;
+                } else if (eventTargetColor === taskColor && selectedTask.length !== 0) {
+                    event.target.style.color = 'rgb(119,119,119)';
+                }
+            });
+        };
+
+
+        const commitments = () => {
+            const input = document.getElementById('task-input');
+            const listCommitment = document.querySelector('.task-list');
+            const btnAdd = document.querySelector('#btn-add') 
+           
+            btnAdd.addEventListener('click', () => {
+                if (input.value.length > 0) {
+                    let itemList = document.createElement('li');
+                    itemList.innerText = input.value;
+
+                    listCommitment.appendChild(itemList);
+                    input.value = "";
+                } else {
+                    alert('erro ao clicar em ADICIONAR.');
+                  
+                }
+                
+            })
+        
+
+             input.addEventListener('keyup', (event) => {
+              if (event.KeyCode === 13 && input.value.length > 0) {
+                let itemList = document.createElement('li');
+                itemList.innerText = input.value;
+
+                listCommitment.appendChild(itemList);
+                input.value = "";
+              }
+          });  
+   };
+    
+
+    fridays('Sexta-Feira');
     diasMes();
     holidays('Feriados');
     moreZoom();
     outZoom();
+    tasks('Projetos');
+    newTaskDiv('green')
+    setTaskClass();
+    sedDayColor();
+    commitments();
