@@ -49,7 +49,33 @@ const lesson1 = {
 // console.log(listValues(lesson3));
 ////////////////////////////////////////////////////////////////////////
 
-// const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
+const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
 //   console.log(allLessons);
 /////////////////////////////////////////////////////////////////////////
+ 
+// const allStudents = (obj) => {
+//     let total = 0;
+//     const array = Object.keys(obj);
+//     for(ob in array){
+//         total += obj[array[ob]].numeroEstudantes;
+//     }
+//        return total;
+// }
+// console.log(allStudents(allLessons));
+///////////////////////////////////////////////////////////////////////////
+
+// const valueObj = (obj, number) => Object.values(obj)[number];
+// console.log(valueObj(lesson2, 1));
+///////////////////////////////////////////////////////////////////////////
+
+// const verifyPair = (obj, key, value) => {
+//     const arr = Object.entries(obj);
+//     let isEqual = false;
+//     for (let index in arr) {
+//       if (arr[index][0] === key && arr[index][1] === value) isEqual = true;
+//     }
+//     return isEqual;
+//   };
+//   console.log(verifyPair(lesson2,'professor','Carlos'));
+//////////////////////////////////////////////////////////////////////////////
 
