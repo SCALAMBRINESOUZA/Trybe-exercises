@@ -18,11 +18,18 @@ const lesson1 = {
     turno: 'noite',
   };
 
-  const includeMorning = (obj, key, value) => {
-    let keynew = key;
-    key = value;
-    obj[keynew] = key;
-    return obj;
-  }
-  includeMorning(lesson2, 'turno', 'manha');
-  console.log(lesson2)
+//   const includeMorning = (obj, key, value) => {
+//     let keynew = key;
+//     key = value;
+//     obj[keynew] = key;
+//     return obj;
+//   }
+//     includeMorning(lesson2, 'turno', 'manha');
+//   console.log(lesson2)
+
+const keys = (obj) => {
+    for(let ob in obj) {
+        console.log(ob)
+    }
+} 
+    keys(lesson3);
