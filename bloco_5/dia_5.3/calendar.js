@@ -114,9 +114,21 @@ const outZoom = () => {
     const legend = (cor) => {
        const elDiv = document.createElement('div');
        elDiv.style.backgroundColor = cor;
+       elDiv.setAttribute('class', 'task')
        myTasks.appendChild(elDiv); 
+       
+       elDiv.addEventListener('click', () => {
+           if (elDiv.className == 'selected') {
+             elDiv.className = 'task';   
+           } else {
+               elDiv.className = 'selected';
+           } 
+       })
     }
 
+
+
+    
     fridays('Sexta-Feira');
     diasMes();
     holidays('Feriados');
