@@ -49,10 +49,14 @@ const lesson1 = {
 // console.log(listValues(lesson3));
 ////////////////////////////////////////////////////////////////////////
 
+// criando um objeto para agrupar os tres objetos lessons usando metodo assign // 
+
 const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
 //   console.log(allLessons);
 /////////////////////////////////////////////////////////////////////////
- 
+
+// Com objeto allLessons retornamos a quantidade do numero da soma de valores s de quantidade de alunos //
+
 // const allStudents = (obj) => {
 //     let total = 0;
 //     const array = Object.keys(obj);
@@ -64,9 +68,15 @@ const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
 // console.log(allStudents(allLessons));
 ///////////////////////////////////////////////////////////////////////////
 
+
+// Obtendo o valor da chave de acordo com a sua posicao no objeto //
+
 // const valueObj = (obj, number) => Object.values(obj)[number];
 // console.log(valueObj(lesson2, 1));
 ///////////////////////////////////////////////////////////////////////////
+
+// verificando objetos  com o metodo entries se um par chave/valor existe //
+
 
 // const verifyPair = (obj, key, value) => {
 //     const arr = Object.entries(obj);
