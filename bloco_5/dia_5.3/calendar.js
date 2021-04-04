@@ -102,19 +102,26 @@ const outZoom = () => {
     }
 
     const myTasks = document.querySelector('.my-tasks');
-    const elSpan = document.createElement('span');
-
+    
     const tasks = (tarefa) => {
+        const elSpan = document.createElement('span');
         elSpan.innerHTML = tarefa;
         elSpan.style.color = 'blue';
         elSpan.style.fontSize = '40px';
         myTasks.appendChild(elSpan);
     }
 
-    
-    fridays('Sexta-Feira')
+    const legend = (cor) => {
+       const elDiv = document.createElement('div');
+       elDiv.style.backgroundColor = cor;
+       myTasks.appendChild(elDiv); 
+    }
+
+    fridays('Sexta-Feira');
     diasMes();
     holidays('Feriados');
     moreZoom();
     outZoom();
-    tasks('Projetos')
+    tasks('Projetos');
+    legend('blue');
+    
