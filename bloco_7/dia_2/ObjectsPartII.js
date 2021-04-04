@@ -18,6 +18,11 @@ const lesson1 = {
     turno: 'noite',
   };
 
+  
+
+
+
+
 //   const includeMorning = (obj, key, value) => {
 //     let keynew = key;
 //     key = value;
@@ -34,5 +39,9 @@ const lesson1 = {
 //     }
 // } 
 //     keys(lesson3);
+////////////////////////////////////////////////////////////////////////
+
+//   const sizeObj = (obj) => Object.keys(obj);
+//   console.log(sizeObj(lesson1));
 ////////////////////////////////////////////////////////////////////////
 
