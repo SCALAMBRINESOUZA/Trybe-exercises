@@ -1,5 +1,4 @@
 const assert = require('assert');
-
 const wordLengths = require('../wordLengths');
 
 const words = ['sun', 'potato', 'roundabout', 'pizza'];
