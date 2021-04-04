@@ -26,10 +26,13 @@ const lesson1 = {
 //   }
 //     includeMorning(lesson2, 'turno', 'manha');
 //   console.log(lesson2)
+////////////////////////////////////////////////////////////////////////
 
-const keys = (obj) => {
-    for(let ob in obj) {
-        console.log(ob)
-    }
-} 
-    keys(lesson3);
+// const keys = (obj) => {
+//     for(let ob in obj) {
+//         console.log(ob)
+//     }
+// } 
+//     keys(lesson3);
+////////////////////////////////////////////////////////////////////////
+
