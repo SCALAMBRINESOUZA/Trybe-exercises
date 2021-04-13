@@ -1,1 +1,1 @@
-Este bloco destina-se a conceitos referente a assincronicidade e callbacks ao uso de API
+Este bloco destina-se a conceitos referente a assincronicidade, callbacks e ao uso de API
