@@ -1,1 +1,0 @@
-Este Readme destina-se a conceitos voltados para a manipulação de elementos com uso do dom e seletores

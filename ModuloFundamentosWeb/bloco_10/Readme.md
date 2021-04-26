@@ -1,1 +1,0 @@
-Bloco destinado ao uso de testes automatizados com Jest
