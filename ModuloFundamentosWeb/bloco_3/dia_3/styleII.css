@@ -1,0 +1,13 @@
+h1, p{
+    text-align: center;
+}
+li:hover{
+    background-color: chocolate;
+}
+li:active{
+    font-family: Reggae One;
+    
+}
+ol, ul{
+    list-style: none;
+}
