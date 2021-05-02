@@ -1,12 +1,22 @@
-// import Components from './Components'
+import React from 'react';
 import './App.css';
+// import ReactClass from './components/ReactClass';
+// import Tick from './components/Tick';
+// import SecondElement from './components/SecondElement';
+// import FisrtElement from './components/FirstElement';
 
-const commitments = ['Estudar', 'Trabalhar', 'Cuidar Filhos', 'Fazer Almoço', 'Estudar']
-const task = () => { ( <ol> { commitments.map((commitment => <li>{commitment}</li>))} </ol> )
-};
-
-function App() {
-  return (task())
+class App extends React.Component {
+  render() {
+    return (
+    <div className="App">
+         {/* <FisrtElement/>  */}
+         {/* <SecondElement/>  */}
+         {/* <Tick /> */}
+         {/* <ReactClass/> */}
+      
+    </div>
+   );
+  }
 }
 
 export default App;
