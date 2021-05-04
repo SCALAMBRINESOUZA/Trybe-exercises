@@ -1,18 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {Component} from 'react';
+import Props from './Props';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello World!!!
-        </p>
-       
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <section>
+        <Props name='carlos' lastName='Henrique' />
+      </section>
+   );
+  }
 }
 
 export default App;

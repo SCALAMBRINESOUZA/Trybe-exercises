@@ -1,0 +1,17 @@
+/* .myCat {
+    height: 430px;
+
+}
+ */
+
+.teste {
+    background-color: brown;
+    font-weight: 500;
+    color: cornsilk;
+} 
+
+.order:nth-child(2) {
+    background-color: blue;
+    font-weight: 500;
+    color: white;  
+}
