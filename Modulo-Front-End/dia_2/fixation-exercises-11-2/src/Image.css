@@ -3,7 +3,7 @@
 
 }
  */
-
+/* 
 .teste {
     background-color: brown;
     font-weight: 500;
@@ -14,4 +14,12 @@
     background-color: blue;
     font-weight: 500;
     color: white;  
+} */
+.list {
+    list-style: none;
+    text-align: center;
+}
+
+body {
+    background-color: burlywood;
 }

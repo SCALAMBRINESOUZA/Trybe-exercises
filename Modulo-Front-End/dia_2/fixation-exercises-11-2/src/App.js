@@ -1,49 +1,65 @@
 import './App.css';
 // import Image from './Image'
 import React, { Component } from 'react';
-import Order from './Order';
-// import UserProfile from './UserProfile';
+// import Order from './Order';
+import UserProfile from './UserProfile';
 // import Album from './Album';
 import './Image.css'
 
 
 class App extends Component {
   render() {
+    // const shoppingList = ['leite', 'arroz', 'feijão', 'banana', 'carne'];
 
-    const headphone = {
-      id: 102,
-      user: "cena@gmail.com",
-      product: "Razer Headphone",
-      price: {
-        value: 99.99,
-        currency: "dollars"
-      }
-    };
-
-    const energyDrink = {
-      id: 77,
-      user: "cena@gmail.com",
-      product: "Monster 500mL",
-      price: {
-        value: 9.99,
-        currency: "dollars"
-      }
-    };
-
-
-    // const joao = {
+    // const item = shoppingList.map((item, index) => {
+    //   console.log("item:", {item})
+    //   return (<li key={index}> {item} </li>);
+    // });
+  
+    // const headphone = {
     //   id: 102,
-    //   name: "João",
-    //   email: "joao@gmail.com",
-    //   avatar: "https:cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_640.png"
+    //   user: "cena@gmail.com",
+    //   product: "Razer Headphone",
+    //   price: {
+    //     value: 99.99,
+    //     currency: "dollars"
+    //   }
     // };
 
-    // const amelia = {
+    // const energyDrink = {
     //   id: 77,
-    //   name: "Amélia",
-    //   email: "amelia@gmail.com",
-    //   avatar: "https:cdn.pixabay.com/photo/2017/01/31/13/05/cameo-2023867_640.png"
+    //   user: "cena@gmail.com",
+    //   product: "Monster 500mL",
+    //   price: {
+    //     value: 9.99,
+    //     currency: "dollars"
+    //   }
     // };
+
+
+    const users = [ 
+      {
+      id: 8,
+      name: "Pedro",
+      email: "pedro@gmail.com",
+      avatar: "https:cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_640.png"
+      },
+      {   
+     
+      id: 3,
+      name: "Sarah",
+      email: "sarah@gmail.com",
+      avatar: "https:cdn.pixabay.com/photo/2017/01/31/13/05/cameo-2023867_640.png"
+    },
+
+    {   
+     
+      id: 13,
+      name: "Joao",
+      email: "joao@gmail.com",
+      avatar: "https:cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_640.png"
+    }
+    ];
     // const album01 = {
     //   image: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b0/Coldplay_-_Mylo_Xyloto.JPG/220px-Coldplay_-_Mylo_Xyloto.JPG',
     //   title: 'Mylo Xyloto',
@@ -80,17 +96,20 @@ class App extends Component {
       //     <Album album={ album01 } />
       //     <Album album={ album02 } />            
       // </article>
+        <div className='App'>
+          {users.map((user, key) => <UserProfile key={key} user={user} />)}
+        </div>
+      // <div className='App'>
+      //   <h1>Ordes recently created</h1>
+      //   <Order order={headphone}  />
+      //   <article className='teste'>
+      //   <Order order={energyDrink} />
+      //   </article>
+      // </div>
         // <div>
-        //   <UserProfile user={ joao } />
-        //   <UserProfile user={ amelia } />
+        //   <h2 style={{textAlign: 'center'}}>Lista de Compras</h2>
+        //   <ol className='list'>{item}</ol>
         // </div>
-      <div className='App'>
-        <h1>Ordes recently created</h1>
-        <Order order={headphone}  />
-        <article className='teste'>
-        <Order order={energyDrink} />
-        </article>
-      </div>
     );
   }
 }
