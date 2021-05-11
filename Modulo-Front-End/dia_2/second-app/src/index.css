@@ -16,7 +16,7 @@ body {
   flex: 1 1 auto;
   min-width: 25%;
   margin: 10px 10px;
-  border: 1px gray solid;
+  border: 4px green dashed;
   border-radius: 10px;
 }
 
