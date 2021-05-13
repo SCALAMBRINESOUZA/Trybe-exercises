@@ -20,18 +20,18 @@
 // assert.deepStrictEqual(numbers, [1, 2, 3]);
 ///////////////////////////////////////////////////////////////////
 
-/* const assert = require('assert');
+// const assert = require('assert');
 
-const pushNumber = (list, number) => (list.push(number));
+// const pushNumber = (list, number) => (list.push(number));
 
-let numbers = [];
+// let numbers = [];
 
-setTimeout(() => pushNumber(numbers, 1), 3000);
-pushNumber(numbers, 2);
-pushNumber(numbers, 3);
+// setTimeout(() => pushNumber(numbers, 1), 3000);
+// pushNumber(numbers, 2);
+// pushNumber(numbers, 3);
 
-assert.deepStrictEqual(numbers, [1, 2, 3]); // essa validação falha
- *///////////////////////////////////////////////////////////////////////////
+// assert.deepStrictEqual(numbers, [1, 2, 3]); // essa validação falha
+ ///////////////////////////////////////////////////////////////////////////
 
 // const assert = require('assert');
 
@@ -42,20 +42,25 @@ assert.deepStrictEqual(numbers, [1, 2, 3]); // essa validação falha
 
 // let numbers = [];
 
-// setTimeout(() => pushNumber(numbers, 1), 3000);
+// setTimeout(() => pushNumber(numbers, 4), 3000);
 // pushNumber(numbers, 2);
 // pushNumber(numbers, 3);
 
-// setTimeout(() => assert.deepStrictEqual(numbers, [2, 3, 1]), 3000);
+// setTimeout(() => assert.deepStrictEqual(numbers, [2, 3, 4]), 3000);
 ////////////////////////////////////////////////////////////////////////////
 
-//const myName = () => console.log(`Carlos ${lastName}`);
+// const firstName = 'Carlos';
+// console.log(firstName)
+// const lastName = 'Henrique'
+// console.log(lastName)
+
+// const fullName = (fn,ln) => `${fn} ${ln}`
 
 // setTimeout(() => {
-//     console.log(`Carlos ${lastName}`)
+//     console.log(fullName(firstName, lastName))
 // }, 3000);
 
-// const lastName = 'Henrique'
+ 
 
 // console.log(lastName);
 
@@ -102,17 +107,17 @@ assert.deepStrictEqual(numbers, [1, 2, 3]); // essa validação falha
 //   monthlyBudget(myIncome, myExpenses, handleExpenses);
 
 
-/* const joinName = ((fullName) => {
-    console.log(fullName);
-})
+//  const joinName = ((fullName) => {
+//    console.log(fullName);
+// })
 
-const FlName = (FirstName, lastName, callback) => { 
-  callback(`${FirstName} ${lastName}`);
+// const FlName = (FirstName, lastName, callback) => { 
+//   callback(`${FirstName} ${lastName}`);
 
-}
+// }
 
-FlName('carlos', 'henrique', joinName)
- */
+// FlName('carlos', 'henrique', joinName)
+ 
 ///////////////////////////////////////////////////////////////////////////////////
 
 // const assert = require('assert');
@@ -136,10 +141,10 @@ FlName('carlos', 'henrique', joinName)
 // assert.strictEqual(getUser(userNationality), "Ivan is Russian"); // complete a chamada da função de getUser
 
 
-// const userFullName = ({ firstName, lastName }) => `Hello! My name is ${firstName} ${lastName}`;
-// const userNationality = ({ firstName, nationality }) => `${firstName} is ${nationality}`;
+//  const userFullName = ({ firstName, lastName }) => `Hello! My name is ${firstName} ${lastName}`;
+//  const userNationality = ({ firstName, nationality }) => `${firstName} is ${nationality}`;
 
-// //const delay = (maxMilliseconds = 5000) => Math.floor(Math.random() * maxMilliseconds);
+// const delay = (maxMilliseconds = 5000) => Math.floor(Math.random() * maxMilliseconds);
 
 // const getUser = callback => {
 //   setTimeout(() => {
@@ -149,7 +154,7 @@ FlName('carlos', 'henrique', joinName)
 //       nationality: "Russian"
 //     };
 //     console.log(callback(user));
-//   }, 5000);
+//   }, delay());
 // };
 
 // getUser(userFullName); // deve imprimir "Hello! My name is Ivan Ivanovich" depois de um certo tempo
@@ -190,7 +195,50 @@ FlName('carlos', 'henrique', joinName)
                //     Exercicios trabalhando com callbacks de forma assincrona //
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// const wait = (miliseconds) => {
+//   const now = new Date().getTime();
+//   while (new Date().getTime() < now + miliseconds) {
+//   };
+// }
 
+function despedida() {
+  setTimeout(() => {
+    console.log("Tchau");
+  }, 5000)
+}
+
+function Ultima() {
+setTimeout(() => {
+    console.log("Ultima Função");
+  },4000)
+}
+
+
+function func1(callback, callback1, callback2) {
+  // wait(3000);
+ setTimeout(() => {
+  console.log('função Um')
+  callback();
+  callback1();
+  callback2();
+ },3000)
+ 
+}
+
+
+function func2() {
+  setTimeout(() => {
+    console.log('função Dois')
+  },3000)
+  
+}
+
+
+console.log("Código começou aqui")
+
+//despedida()
+func1(func2, Ultima, despedida);
+// func2();
 
 
 
