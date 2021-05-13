@@ -1,0 +1,12 @@
+.square {
+    height: 100px;
+    width: 100px;
+    background-color: yellowgreen;
+    transition: 3s;
+}
+
+.square:hover {
+    height: 400px;
+    width: 400px;
+    background-color: silver;
+}
