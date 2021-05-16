@@ -30,20 +30,26 @@ const fetchCountry = async () => {
     await myFetch('Angola')
     await myFetch('Nigeria')
     await myFetch('Fiji')
-    await myFetch('Cuba')               
+    await myFetch('Cuba')
+    await myFetch('Argentina')
+    await myFetch('Arabia')
+    await myFetch('Israel')
+    await myFetch('India')
+    await myFetch('Italia')               
+                  
     } catch(error) { alert('Ocorreu um erro ao buscar pais', error)}
 }
                             // Exemplo abaixo de como criar uma promisse //
-const fetch = () => {
-    return new Promise((resolve, reject) => {
-        const response = requisicao()
-        if (response.ok) {
-            resolve(response)        
-        } else {
-            reject(response)
-        }
-    })
-}
+// const fetch = () => {
+//     return new Promise((resolve, reject) => {
+//         const response = requisicao()
+//         if (response.ok) {
+//             resolve(response)        
+//         } else {
+//             reject(response)
+//         }
+//     })
+// }
 
 
 window.onload = fetchCountry();
