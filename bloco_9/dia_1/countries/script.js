@@ -20,7 +20,7 @@ const myFetch = (names) => fetch(`https://restcountries.eu/rest/v2/name/${names}
     .then((response) => response.json())
       .then((countries) => {
             renderCountry(countries[0])
-      })
+})
 
 
 
@@ -31,7 +31,18 @@ const fetchCountry = async () => {
     await myFetch('Nigeria')
     await myFetch('Fiji')
     await myFetch('Cuba')               
-    } catch(_error) { alert('Ocorreu um erro ao buscar pais')}
+    } catch(error) { alert('Ocorreu um erro ao buscar pais', error)}
+}
+                            // Exemplo abaixo de como criar uma promisse //
+const fetch = () => {
+    return new Promise((resolve, reject) => {
+        const response = requisicao()
+        if (response.ok) {
+            resolve(response)        
+        } else {
+            reject(response)
+        }
+    })
 }
 
 
