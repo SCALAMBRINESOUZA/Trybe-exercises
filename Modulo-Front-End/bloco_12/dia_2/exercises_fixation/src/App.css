@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+.lblFirst {
+  
+  padding: 10px;
+}
+
+.lblSecond {
+  display: block;
+  padding: 10px;
+  }
+
+.txtName {
+  margin-left: 10px;
+}
+
+.lblThird {
+  display: block;
+  padding: 10px;
+}
+
+.txtNumber {
+  margin-left: 10px;
+}
+
+.lblFour {
+  display: block;
+  padding: 10px;
+}
+
+.txtArea {
+  margin-left: 10px;
+  width: 390px;
+  height: 70px;
+}
