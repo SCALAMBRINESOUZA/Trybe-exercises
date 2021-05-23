@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.lblFirst {
+  
+  padding: 10px;
+  margin: 10px;
+  }
+
+.lblSecond {
+  display: block;
+  padding: 10px;
+  }
+
+.txtName {
+  margin-left: 10px;
+}
+
+.lblThird {
+  display: block;
+  padding: 10px;
+}
+
+.txtNumber {
+  margin-left: 10px;
+}
+
+.lblFour {
+  display: block;
+  padding: 10px;
+}
+
+.txtArea {
+  margin-left: 10px;
+  width: 390px;
+  height: 70px;
+}
+
+.lblFive {
+  display: block;
+  padding: 10px;
+}
+
+.lblSixth {
+  display: block;
+  padding: 10px;
+}
+
+.inputFile {
+  padding: 10px;
+}
+
+.fdlFirst {
+  background-color:red;
+  width: 380px;
+  margin: 10px;
+  
+}
+
+.fdlSecond {
+  background-color: black;
+  width: 380px;
+  margin: 10px;
+
+}
+
+body {
+  color:white;
+  font-weight: 700;
+  background-image:url('https://img.elo7.com.br/product/main/15AE278/escudo-sao-paulo-fc-em-3d-spfc.jpg')
+  
+}
+
