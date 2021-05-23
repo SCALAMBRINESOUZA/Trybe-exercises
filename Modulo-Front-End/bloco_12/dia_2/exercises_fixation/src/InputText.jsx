@@ -1,24 +1,15 @@
 import { Component } from "react";
 
 class InputText extends Component {
-  constructor() {
-    super()
-    this.state = {
-      name: '',
-    }
-  }
-
-  handleOnName = event => {
-    this.setState({name: event.target.value})
-  }
-
   render() {
+		const { value, handleOnChange } = this.props
     return(
-      <>
-      <label className='lblSecond'>
-        Digite seu nome:  
-      </label>  
-        <input className='txtName' name='texto' type='text' value={this.state.name} onChange={this.handleOnName} />
+      
+      <>   
+        	<label className='lblSecond'>
+        		Digite seu nome:  
+      		</label>  
+        	<input className='txtName' name='nameUser' type='text' value={ value } onChange={handleOnChange} />
       </>
     )
   }  

@@ -40,7 +40,8 @@
 .lblFirst {
   
   padding: 10px;
-}
+  margin: 10px;
+  }
 
 .lblSecond {
   display: block;
@@ -70,3 +71,39 @@
   width: 390px;
   height: 70px;
 }
+
+.lblFive {
+  display: block;
+  padding: 10px;
+}
+
+.lblSixth {
+  display: block;
+  padding: 10px;
+}
+
+.inputFile {
+  padding: 10px;
+}
+
+.fdlFirst {
+  background-color:red;
+  width: 380px;
+  margin: 10px;
+  
+}
+
+.fdlSecond {
+  background-color: black;
+  width: 380px;
+  margin: 10px;
+
+}
+
+body {
+  color:white;
+  font-weight: 700;
+  background-image:url('https://img.elo7.com.br/product/main/15AE278/escudo-sao-paulo-fc-em-3d-spfc.jpg')
+  
+}
+
