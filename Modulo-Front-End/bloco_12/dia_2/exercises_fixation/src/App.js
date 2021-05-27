@@ -36,8 +36,7 @@ class App extends Component {
           <InputText value={this.state.nameUser} handleOnChange={ this.handleOnChange } />
           <InputNumber value={this.state.ageUser} handleOnChange={ this.handleOnChange } />     
         </fieldset> 
-        <TextArea value={ this.state.descrUser } handleOnChange={ this.handleOnChange } />
-        
+        <TextArea value={ this.state.descrUser } handleOnChange={ this.handleOnChange } />        
         <fieldset className='fdlSecond'>
         <legend>Preencha com sinceridade</legend>
         <CheckBox value={ this.state.chkChoice } handleOnChange={ this.handleOnChange } />
@@ -49,8 +48,4 @@ class App extends Component {
     );
   }
 }
-
-
-
-
 export default App;
