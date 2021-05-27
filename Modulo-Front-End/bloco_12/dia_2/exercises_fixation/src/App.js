@@ -16,7 +16,7 @@ class App extends Component {
       ageUser: 0,
       descrUser: '',
       chkChoice: false,
-      formularioComErros: true,
+      
 
     }
   }
