@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+.App h1 {
+  color: #61dafb;
+  background-color: gray;
+  height: 40%;
+  width: 100%;
+  padding: 30px;
+  margin-top: 0;
+  font-size: 30px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.fdlFirst {
+  width: 310px;
+}
+
+.nameUser {
+  width: 310px;
+  margin: 5px;
+}
+
+.emailUser {
+  width: 310px;
+  margin: 5px;
+}
+
+.cpfUser {
+  width: 310px;
+  margin: 5px;
+}
+
+.adressUser {
+  width: 310px;
+  margin: 5px;
+}
+
+.cityUser {
+  width: 310px;
+  margin: 5px;
+}
+
+.homeType {
+  width: 310px;
+  margin: 5px;
+}
+
+.buildType {
+  width: 310px;
+  margin: 5px;
+}

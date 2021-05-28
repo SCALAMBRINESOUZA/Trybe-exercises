@@ -16,7 +16,7 @@ class App extends Component {
       ageUser: 0,
       descrUser: '',
       chkChoice: false,
-      formularioComErros: true,
+      
 
     }
   }
@@ -30,14 +30,13 @@ class App extends Component {
   render() {
     return (
       <form>
-        <Select value={this.state.selectSoccer} handleOnChange={ this.handleOnChange } />
+        <Select value={ this.state.selectSoccer } handleOnChange={ this.handleOnChange } />
         <fieldset className='fdlFirst'>  
         <legend>Dados pessoais</legend>
           <InputText value={this.state.nameUser} handleOnChange={ this.handleOnChange } />
           <InputNumber value={this.state.ageUser} handleOnChange={ this.handleOnChange } />     
         </fieldset> 
-        <TextArea value={ this.state.descrUser } handleOnChange={ this.handleOnChange } />
-        
+        <TextArea value={ this.state.descrUser } handleOnChange={ this.handleOnChange } />        
         <fieldset className='fdlSecond'>
         <legend>Preencha com sinceridade</legend>
         <CheckBox value={ this.state.chkChoice } handleOnChange={ this.handleOnChange } />
@@ -49,8 +48,4 @@ class App extends Component {
     );
   }
 }
-
-
-
-
 export default App;
