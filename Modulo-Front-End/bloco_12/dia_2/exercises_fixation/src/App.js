@@ -30,7 +30,7 @@ class App extends Component {
   render() {
     return (
       <form>
-        <Select value={this.state.selectSoccer} handleOnChange={ this.handleOnChange } />
+        <Select value={ this.state.selectSoccer } handleOnChange={ this.handleOnChange } />
         <fieldset className='fdlFirst'>  
         <legend>Dados pessoais</legend>
           <InputText value={this.state.nameUser} handleOnChange={ this.handleOnChange } />
