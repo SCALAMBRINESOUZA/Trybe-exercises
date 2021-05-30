@@ -14,6 +14,8 @@ class ButtonThree extends React.Component {
             if(this.state.numberClicked % 2 === 0) {
                 console.log('red')
                     document.querySelector('.btnThree').style.background = 'red'
+            } else if(this.state.numberClicked % 2 !== 0) {
+                document.querySelector('.btnThree').style.background = 'white'
             }
         }
 

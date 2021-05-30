@@ -1,6 +1,6 @@
 import React from 'react'
 
-class butonOne extends React.Component {
+class ButtonOne extends React.Component {
     constructor() {
         super()
         this.handleClick = this.handleClick.bind(this)
@@ -15,6 +15,8 @@ class butonOne extends React.Component {
           if(this.state.numeroDeCliques % 2 === 0) {
             console.log('green');
             document.querySelector('.btnOne').style.background = 'green'
+          } else if(this.state.numeroDeCliques % 2 !== 0) {
+            document.querySelector('.btnOne').style.background = 'white'
           }
         }
         
@@ -24,18 +26,11 @@ class butonOne extends React.Component {
         }), 
         this.alterColor
 
-        // () => {
-        //   if (this.state.numeroDeCliques % 2 === 0) {
-        //     console.log('green');
-        //     document.querySelector('.btnOne').style.background = "green";
-        //   }
-        // } 
-      
         )}
     render() {
       return(
-        <button className='btnOne' onClick={this.handleClick}>{this.state.numeroDeCliques}</button>
+        <button className='btnOne' onClick={() => this.handleClick()}>{this.state.numeroDeCliques}</button>
       )
     }
 }
-export default butonOne  
+export default ButtonOne  

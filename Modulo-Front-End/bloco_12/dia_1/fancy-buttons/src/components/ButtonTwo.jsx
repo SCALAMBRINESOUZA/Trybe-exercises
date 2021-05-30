@@ -14,6 +14,8 @@ class ButtonTwo extends React.Component {
                 if(this.state.myClicks % 2 === 0) {
                     console.log('blue');
                         document.querySelector('.btnTwo').style.background = 'blue'
+                } else if(this.state.myClicks % 2 !== 0) {
+                    document.querySelector('.btnTwo').style.background = 'white'  
                 }
             }
 
