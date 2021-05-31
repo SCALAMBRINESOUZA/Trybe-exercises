@@ -5,7 +5,8 @@
 //   } 
 
 //   for(let name in names){   
-//     console.log(`Olá ${names[name]}`)
+//    console.log(`Olá ${names[name]}`)
+   
 //   }
 
 // const carro = {
@@ -17,16 +18,14 @@
 // for(let carros in carro){
 //     console.log(`${carros} -->> ${carro[carros]}`);
 // }
-                        // Objeto com metodos //
+                        // Objetos com metodos //
 
-const sum = {
-    number1: 15,
-    number2: 25,
-    soma: function() { 
-     return this.number1 + this.number2
-    }
-};
-    console.log(sum.soma());
+// const sum = {
+//     soma: (number1, number2) => { 
+//      return number1 + number2
+//     }
+// };
+//     console.log(sum.soma(09, 25));
 
 
 

@@ -9,6 +9,7 @@
 //     }
 //     return isPalindrome;
 // }
+// console.log(verificarPalindrome('arara'))
 
 // function verificaPalindrome(string) {
 //     let reverse = string.split('').reverse().join('');
@@ -19,8 +20,7 @@
 //     }
 //   }   
 
-
-// console.log(verificaPalindrome('arara'));
+// console.log(verificaPalindrome('desenvolvimento'));
 
                     // Retorne o maior indice de um array //
 
@@ -34,7 +34,7 @@
 //         return acumulador;
 
 // } 
-// console.log(biggestIndex([1,2,13,4,5]));
+// console.log(biggestIndex([2, 3, 6, 7, 10, 1]));
 
 
                     // Retorne o menor indice de um array //
@@ -124,65 +124,74 @@
 //     }
 //   }
 // }
-//     console.log(verificaFimPalavra('joaofernando', 'fernan'));                    
+//     console.log(verificaFimPalavra('carlos', 'los'));                    
 
-                        // Bonus //
-function Romanos(roma) {
-  let romanos = {
-    I: 1,
-    V: 5,
-    X: 10,
-    L: 50,
-    C: 100,
-    D: 500,
-    M: 1000,
-  };
+                    //    Bonus //
+// function Romanos(roma) {
+//   let romanos = {
+//     I: 1,
+//     V: 5,
+//     X: 10,
+//     L: 50,
+//     C: 100,
+//     D: 500,
+//     M: 1000,
+//   };
 
-  let arrayNumbers = [];
-  let result = 0;
+//   let arrayNumbers = [];
+//   let result = 0;
 
-  for (let indice in roma) {
-    arrayNumbers[indice] = romanos[roma[indice]];
-  }
+//   for (let indice in roma) {
+//     arrayNumbers[indice] = romanos[roma[indice]];
+//   }
 
-  for (let indice in arrayNumbers) {
-    if (arrayNumbers[indice] < arrayNumbers[indice + 1]) {
-      arrayNumbers[indice + 1] = arrayNumbers[indice + 1] - arrayNumbers[indice];
-    } else {
-      result += arrayNumbers[indice];
-    }
-  }
+//   for (let indice in arrayNumbers) {
+//     if (arrayNumbers[indice] < arrayNumbers[indice + 1]) {
+//       arrayNumbers[indice + 1] = arrayNumbers[indice + 1] - arrayNumbers[indice];
+//     } else {
+//       result += arrayNumbers[indice];
+//     }
+//   }
 
-  return result;
+//   return result;
+// }
+
+// console.log(Romanos('M'));
+
+
+const basket = [
+  'Melancia', 'Abacate', 'Melancia', 'Melancia', 'Uva', 'Laranja',
+  'Jaca', 'Pera', 'Melancia', 'Uva', 'Laranja', 'Melancia',
+  'Banana', 'Uva', 'Pera', 'Abacate', 'Laranja', 'Abacate',
+  'Banana', 'Melancia', 'Laranja', 'Laranja', 'Jaca', 'Uva',
+  'Banana', 'Uva', 'Laranja', 'Pera', 'Melancia', 'Uva',
+  'Jaca', 'Banana', 'Pera', 'Abacate', 'Melancia', 'Melancia',
+  'Laranja', 'Pera', 'Banana', 'Jaca', 'Laranja', 'Melancia',
+  'Abacate', 'Abacate', 'Pera', 'Melancia', 'Banana', 'Banana',
+  'Abacate', 'Uva', 'Laranja', 'Banana', 'Abacate', 'Uva',
+  'Uva', 'Abacate', 'Abacate', 'Melancia', 'Uva', 'Jaca',
+  'Uva', 'Banana', 'Abacate', 'Banana', 'Uva', 'Banana',
+  'Laranja', 'Laranja', 'Jaca', 'Jaca', 'Abacate', 'Jaca',
+  'Laranja', 'Melancia', 'Pera', 'Jaca', 'Melancia', 'Uva',
+  'Abacate', 'Jaca', 'Jaca', 'Abacate', 'Uva', 'Laranja',
+  'Pera', 'Melancia', 'Jaca', 'Pera', 'Laranja', 'Jaca',
+  'Pera', 'Melancia', 'Jaca', 'Banana', 'Laranja', 'Jaca',
+  'Banana', 'Pera', 'Abacate', 'Uva',
+];
+
+const result = {};
+
+for (let index = 0; index < basket.length; index += 1) {
+  const fruit = basket[index];
+  if (!result[fruit]) result[fruit] = 0;
+  result[fruit] += 1;
 }
 
-console.log(Romanos('CD'));
-                        
+const summaries = [];
+for (fruit in result) {
+  let message = `${result[fruit]} ${fruit}`;
+  if (result[fruit] > 1) message += 's';
+  summaries.push(message);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(`Sua cesta possui: ${summaries.join(', ')}.`);
