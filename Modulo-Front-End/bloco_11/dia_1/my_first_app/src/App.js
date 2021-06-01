@@ -13,12 +13,13 @@ class App extends React.Component {
     return (
       // <nav>{console.log(task())}</nav> 
        <section>
+       <div className='div1'>
        <Component 
        img={myPhoto}
        name='Carlos Henrique Scalambrine de Souza'
        paragraph='Dedicação e comprometimento estruturam meus pilares'
       />
-
+      </div>
        <div className='div'> 
        <Component 
        img={Noix}

@@ -38,7 +38,8 @@
 }
 
 .img {
-  max-width: 300px;
+  width: 300px;
+  border: red double 5px;
 }
 
 .div {
@@ -48,4 +49,15 @@
 
 .div img {
   height: 430px;
+  border: cadetblue dashed 5px;
+}
+
+.div1 img:hover {
+  height: 500px;
+  transition: 3s;
+}
+
+.div img:hover {
+  height: 500px;
+  transition: 3s;
 }
