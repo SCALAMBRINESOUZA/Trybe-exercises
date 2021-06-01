@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.img {
+  max-width: 300px;
+}
+
+.div {
+  margin-left: 650px;
+  margin-top: -545px;
+}
+
+.div img {
+  height: 430px;
+}

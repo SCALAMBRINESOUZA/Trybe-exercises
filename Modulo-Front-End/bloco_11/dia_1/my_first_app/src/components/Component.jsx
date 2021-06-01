@@ -4,8 +4,9 @@
      render() {
          return (
             <main>
-                <h1>Carlos Henrique Scalambrine de Souza</h1>
-                <p>Dedicação e comprometimento estruturam meus pilares</p>
+                <h1>{this.props.name}</h1>
+                <p>{this.props.paragraph}</p>
+                <img className='img' src={this.props.img} alt='Choice an img your' />
             </main>
          )
      }
