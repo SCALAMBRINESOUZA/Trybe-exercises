@@ -4,9 +4,9 @@ import '../src/h1Fisrt.css'
 import '../src/h1Second.css'
 // import ReactClass from './components/ReactClass';
 // import Tick from './components/Tick';
-import SecondElement, { SecondElement1 } from './components/SecondElement';
+//import SecondElement, { SecondElement1 } from './components/SecondElement';
 // import FisrtElement from './components/FirstElement';
-        
+
     
 class App extends React.Component {
   render() {
@@ -16,11 +16,11 @@ class App extends React.Component {
     // const element = <h1 className={classe}>Hello, world</h1>
     return (
     <div className="App">
-           {/* {element}
-           {h1} */}
+         {/* {element}
+         {h1} */}
          {/* <FisrtElement/>  */}
-         <SecondElement />      
-         <SecondElement1 />   
+         {/* <SecondElement />      
+         <SecondElement1 />    */}
          {/* <Tick /> */}
          {/* <ReactClass/> */}
       
