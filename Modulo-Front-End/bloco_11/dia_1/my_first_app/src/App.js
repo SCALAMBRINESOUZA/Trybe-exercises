@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
- import Component from './components/Component'
+import Component from './components/Component'
 
 // const commitments = ['Estudar', 'Entender', 'Trabalhar', 'Aplicar']
 // const task = () => { ( <ul> {commitments.map((commitment => <li>{commitment}</li>))} </ul>)};
