@@ -52,3 +52,37 @@
   transition: 3s;
   border: red dashed 5px;
 }
+
+.list {
+  text-align: center;
+  margin-left: 30px;
+  list-style: none;
+  color: greenyellow;
+  background-color: khaki;
+  width: 300px;
+  
+  
+}
+
+.list:hover {
+  transition: 3s;
+  color: darkorange;
+  background-color: darkorchid;
+  border:groove 10px red;
+  font-size: 65px;
+}
+
+.div {
+  background-color: lightblue;
+  width: 400px;
+  margin-left: 500px;
+  position: absolute;
+  margin-top: 10px;
+}
+
+.div:hover {
+  transition: 3s;
+  background-color: mediumspringgreen;
+  border: midnightblue dashed 5px;
+    
+}
