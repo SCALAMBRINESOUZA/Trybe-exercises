@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.paragraph {
+  max-width: 300px;
+  overflow: scroll;
+  max-height: 150px;
+  padding: 10px;
+  background-color: black;
+  color: red;
+}
+
+.img:hover {
+  height: 400px;
+  width: 400px;
+  transition: 3s;
+  border: red dashed 5px;
+}

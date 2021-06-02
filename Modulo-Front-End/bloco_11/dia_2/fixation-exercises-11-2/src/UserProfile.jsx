@@ -1,4 +1,3 @@
-// arquivo UserProfile.js
 import React from 'react';
 import Image from './Image';
 
@@ -9,7 +8,7 @@ class UserProfile extends React.Component {
         <p> {this.props.user.name} </p>
         <p> {this.props.user.email} </p>
         <Image source={this.props.user.avatar} alternativeText="User avatar" />
-      </div>
+     </div>
     );
   }
 }

@@ -1,10 +1,23 @@
 import './App.css';
-// import Image from './Image'
+//import Image from './Image'
 import React, { Component } from 'react';
-// import Order from './Order';
-import UserProfile from './UserProfile';
-// import Album from './Album';
-import './Image.css'
+import Order from './Order';
+//import Album from './Album';
+//import UserProfile from './UserProfile';
+//import './Image.css'
+
+
+// function Greeting(props) {
+//   return (<h1>Hello, {props.name} {props.lastName}</h1>)
+// }
+
+// class Greetings extends Component {
+//   render() {
+//     return(
+//       <h1>Hello, {this.props.name} {this.props.lastName}</h1>
+//     )
+//   }
+// }
 
 
 class App extends Component {
@@ -16,96 +29,110 @@ class App extends Component {
     //   return (<li key={index}> {item} </li>);
     // });
   
-    // const headphone = {
-    //   id: 102,
-    //   user: "cena@gmail.com",
-    //   product: "Razer Headphone",
-    //   price: {
-    //     value: 99.99,
-    //     currency: "dollars"
-    //   }
+    const headphone = {
+      id: 102,
+      user: "cena@gmail.com",
+      product: "Razer Headphone",
+      price: {
+        value: 99.99,
+        currency: "dollars"
+      }
+    };
+
+    const energyDrink = {
+      id: 77,
+      user: "cena@gmail.com",
+      product: "Monster 500mL",
+      price: {
+        value: 9.99,
+        currency: "dollars"
+      }
+    };
+
+
+    // const pedro =  
+    //   {
+    //   id: 8,
+    //   name: "Pedro",
+    //   email: "pedro@gmail.com",
+    //   avatar: "https:cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_640.png"
+    //   };
+         
+    // const sarah = 
+    // {
+       
+    //   id: 3,
+    //   name: "Sarah",
+    //   email: "sarah@gmail.com",
+    //   avatar: "https:cdn.pixabay.com/photo/2017/01/31/13/05/cameo-2023867_640.png"
     // };
 
-    // const energyDrink = {
-    //   id: 77,
-    //   user: "cena@gmail.com",
-    //   product: "Monster 500mL",
-    //   price: {
-    //     value: 9.99,
-    //     currency: "dollars"
-    //   }
+    // const joao = 
+    // {   
+     
+    //   id: 13,
+    //   name: "Joao",
+    //   email: "joao@gmail.com",
+    //   avatar: "https:cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_640.png"
     // };
-
-
-    const users = [ 
-      {
-      id: 8,
-      name: "Pedro",
-      email: "pedro@gmail.com",
-      avatar: "https:cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_640.png"
-      },
-      {   
-     
-      id: 3,
-      name: "Sarah",
-      email: "sarah@gmail.com",
-      avatar: "https:cdn.pixabay.com/photo/2017/01/31/13/05/cameo-2023867_640.png"
-    },
-
-    {   
-     
-      id: 13,
-      name: "Joao",
-      email: "joao@gmail.com",
-      avatar: "https:cdn.pixabay.com/photo/2016/08/20/05/38/avatar-1606916_640.png"
-    }
-    ];
-    // const album01 = {
-    //   image: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b0/Coldplay_-_Mylo_Xyloto.JPG/220px-Coldplay_-_Mylo_Xyloto.JPG',
-    //   title: 'Mylo Xyloto',
+    
+    //  const album01 = {
+    //   image: 'https://upload.wikimedia.org/wikipedia/pt/thumb/0/0b/Direto_do_Campo_de_Exterm%C3%ADnio.jpg/220px-Direto_do_Campo_de_Exterm%C3%ADnio.jpg',
+    //   title: 'Direto do campo de exterminio',
+    //   description: 'O grupo tem um estilo musical agressivo, violento, as letras do grupo seguem um violento estilo, entretanto racional. O grupo utiliza a linguagem da periferia (gírias) e a linguagem formal. Também é comum utilizar partes de músicas clássicas para iniciarem suas músicas. A religião se faz presente como mediadora, uma metáfora para a violência da Terra, como em "Hoje Deus Anda de Blindado" (Uma alusão à música de 1999 do grupo Pavilhão 9, "Se Deus Vier, Que Venha Armado").',
     //   releaseDate: {
-    //     year: '2011',
+    //     year: '2003',
     //     month: '10',
     //     day: '24',
     //   },
     //   others: {
-    //     recordCompany: 'Capitol, Parlophone',
-    //     formats: 'CD, digital'
+    //     recordCompany: 'Sky Blue',
+    //     formats: 'CD'
     //   }
     // };
 
     // const album02 = {
-    //   image: 'https://upload.wikimedia.org/wikipedia/pt/thumb/5/5d/Coldplay_-_Ghost_Stories.jpg/220px-Coldplay_-_Ghost_Stories.jpg',
-    //   title: 'Ghost Stories',
+    //   image: 'https://upload.wikimedia.org/wikipedia/pt/2/23/O_Espet%C3%A1culo_do_Circo_dos_Horrores.jpg',
+    //   title: 'O Espetáculo do Circo dos Horrores ',
+    //   description: 'Após a censura do videoclipe do grupo no disco Versos Sangrentos, o Facção Central lançou o álbum A Marcha Fúnebre Prossegue, que inicia-se com uma introdução à notícia da censura, dada em vários telejornais com os dizeres "Rap que faz apologia ao crime, Facção Central", divulgado no Jornal Nacional por Fátima Bernardes. Essa introdução é composta por vários "recortes" de noticiários da televisão brasileira. Após a faixa "Introdução", vem em seguida a faixa "Dia Comum"' ,
     //   releaseDate: {
-    //     year: '2014',
-    //     month: '05',
-    //     day: '16',
+    //     year: '2006',
+    //     month: '06',
+    //     day: '06',
     //   },
     //   others: {
-    //     recordCompany: 'Parlophone',
+    //     recordCompany: 'Sky Blue',
     //     formats: 'CD, digital'
     //   }
     // };
       
-    return (
+     return (      
+      //  <>
+      //  <UserProfile user={pedro} />
+      //  <UserProfile user={sarah} />
+      //  <UserProfile user={joao} />
+      //  </>
+    //   // <>
+      //   <Greeting name='Carlos' lastName='Henrique' />
+      //   <Greetings name = 'Scalambrine' lastName='Souza'/>
+      // </>
   //  <nav>
   //    <Image source='https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_1280.jpg' alternativeText=' Cute cat staring'/>
   //  </nav>
-      // <article>
-      //     <Album album={ album01 } />
-      //     <Album album={ album02 } />            
-      // </article>
-        <div className='App'>
-          {users.map((user, key) => <UserProfile key={key} user={user} />)}
-        </div>
-      // <div className='App'>
-      //   <h1>Ordes recently created</h1>
-      //   <Order order={headphone}  />
-      //   <article className='teste'>
-      //   <Order order={energyDrink} />
-      //   </article>
-      // </div>
+    //  <article>
+    //       <Album album={ album01 } />
+    //       <Album album={ album02 } />            
+    //   </article>
+    //   //   <div className='App'>
+      //     {users.map((user, key) => <UserProfile key={key} user={user} />)}
+      //   </div>
+       <div className='App'>
+        <h1>Ordes recently created</h1>
+        <Order order={headphone}  />
+        <article className='teste'>
+        <Order order={energyDrink} />
+        </article>
+       </div>
         // <div>
         //   <h2 style={{textAlign: 'center'}}>Lista de Compras</h2>
         //   <ol className='list'>{item}</ol>
