@@ -1,23 +1,26 @@
-// import React, {Component }from 'react';
+import React, {Component }from 'react';
 
-// class MyJokeComponent extends Component {
-//   constructor() {
-//     super()
-//     console.log('constructor')
+class MyJokeComponent extends Component {
+  constructor() {
+    super()
+    console.log('constructor')
 
-//     this.state = {
-//       piada: 'Minha Piada'
-//     }
-//   }  
+    this.state = {
+      piada: 'Minha Piada'
+    
+    }
+  }  
   
-//   componentDidMount() {
-//     this.setState({piada: 'Minha piada atualizada'})
-//   }
+  componentDidMount() {
+    // alert(this.state.piada)  
+    alert('component didMount chamado vai alterar o conteudo da Minha Piada')
+    this.setState({piada: 'Minha piada atualizada'})
+  }
 
-//   render() {
-//     console.log('render')
-//     return (<span>{this.state.piada} </span>)
-//   }
-// }
+  render() {
+    console.log('render')
+    return (<span>{this.state.piada} </span>)
+  }
+}
 
-// export default MyJokeComponent;
+export default MyJokeComponent;
