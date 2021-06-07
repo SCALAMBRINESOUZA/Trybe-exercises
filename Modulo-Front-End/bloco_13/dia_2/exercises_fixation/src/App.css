@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.header-site {
+  border: 1px solid #ccc;
+  background: #fafafa;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo-site {
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.link-site {
+  padding: 5px;
+}
+
+.content-site {
+  border: 1px solid red;
+  min-width: 400px;
+  min-height: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
