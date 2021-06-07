@@ -32,7 +32,7 @@ class TrybeSite extends Component {
           <Route path="/sobre" component={Sobre}/>
           <Route path="/aulas" component={Aulas}/>
           <Route path="/contato" render={() => <Contato ele='hello'  />}/>
-          <Route exact path="/"> <Home /></Route>
+          <Route exact path="/home"> <Home /></Route>
         </Switch>
         </div>
       </>
