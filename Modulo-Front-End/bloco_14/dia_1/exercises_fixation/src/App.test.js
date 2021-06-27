@@ -1,4 +1,4 @@
-import { render} from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 import App from './App';
 
 describe('Primeiros testes usando RTL', () => {
@@ -27,5 +27,20 @@ describe('Primeiros testes usando RTL', () => {
       const { getAllByRole } = render(<App />)
       const myButtons = getAllByRole('button')
       expect(myButtons.length).toBe(2)
+    })
+
+    it('Verifica se os eventos estão ocorrendo corretamente', () => {
+      const {getByTestId, getByLabelText } = render(<App />)
+      const EMAIL_USER = 'email@email.com'
+      const inputEmail = getByLabelText(/E-mail/i)
+      const btnEnviar = getByTestId('btn-send')
+      const textEmail = getByTestId('id-email-user')
+      
+      fireEvent.change(inputEmail, { target: {value: EMAIL_USER }})
+      fireEvent.click(btnEnviar);
+
+      expect(textEmail).toBeInTheDocument()
+      expect(inputEmail).toHaveValue('')
+      expect(textEmail).toHaveTextContent(`Valor: ${EMAIL_USER}`)
     })
 })
