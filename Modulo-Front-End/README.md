@@ -1,1 +1,1 @@
-Este módulo será destinado aos primeiros conceitos de React
+Este módulo será destinado aos conceitos de desenvolvimento Front-End
