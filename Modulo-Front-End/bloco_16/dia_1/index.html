@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redux sem React</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.0/redux.min.js"></script>
+</head>
+<body>
+    <div>
+      Clicou <span id="value"></span> vezes.
+      <br />
+      <button id="increment">+</button>
+      <button id="decrement">-</button>
+      <button onclick="incrementBy10()">+10</button>
+
+    </div>    
+    <script>
+        // Aqui foi criado a store para armazenar o estado global da app  //
+      const store = Redux.createStore(contadorReducer)
+
+      
+      /* Aqui foi criado reducer recebendo os dois parametros respectivamente state e action  
+       Observação nunca podemos alterar diretamente o state e sim usando o return no caso o que gostariamos de atualizar como 
+       se fosse this.setState */
+      function contadorReducer(state = 0, action) {
+      switch (action.type) {
+        case 'INCREMENT':
+          return state + action.value
+          break;
+        case 'DECREMENT':
+          return state - action.value
+         default:
+           return state
+           break;   
+    }
+  }
+
+      // Aqui foi criado a ação dispatch para ser usado no reducer pelo parametro action //
+      document.getElementById('increment').addEventListener('click', () => {
+        store.dispatch({
+          type: 'INCREMENT',
+          value: 1
+        });
+      });
+
+      document.getElementById('decrement').addEventListener('click', () => {
+        store.dispatch({
+          type: 'DECREMENT',
+          value: 1
+        });
+      });
+
+      function incrementBy10() {
+      store.dispatch({
+        type: 'INCREMENT',
+        value: 10
+      })
+    }
+
+      store.subscribe(() => 
+        document.getElementById('value').innerHTML = store.getState())
+      
+    
+    </script>
+</body>
+</html>
