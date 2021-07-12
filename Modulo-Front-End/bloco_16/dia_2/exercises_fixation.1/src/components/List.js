@@ -1,11 +1,18 @@
-function List() {
+import { connect } from "react-redux";
+
+function List({ tasks }) {
     return (
       <div>
         <ul>
-          <li>Minha primeira tarefa</li>
-          <li>Minha segunda tarefa</li>
+          {tasks.map((task, index) => <li key ={index}>{task}</li>)}
         </ul>
       </div>
     )
-  }
-  export default List;
+}
+
+const mapStateToProps =(state) => ({
+  tasks: state.todoReducer.tasks
+});
+
+
+  export default connect(mapStateToProps)(List);

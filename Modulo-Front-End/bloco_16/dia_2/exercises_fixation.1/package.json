@@ -1,4 +1,3 @@
-
 {
   "name": "exercises_fixation.1",
   "version": "0.1.0",
@@ -9,6 +8,7 @@
     "@testing-library/user-event": "^12.8.3",
     "react": "^17.0.2",
     "react-dom": "17.0.2",
+    "react-redux": "^7.2.4",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
@@ -34,10 +34,6 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    
-    
     ]
-    
   }
-  
 }

@@ -1,11 +1,27 @@
-function Todo() {
-    return (
+import React from 'react'
+import { connect } from "react-redux";
+import * as TodoAction from '../actions/todoAction'
+
+function Todo(props) {
+  let textInput = React.createRef();
+  
+  const addTaskOnStore = () => {
+    const value = textInput.current.value
+    props.addTask(value)
+  }
+    
+  return (
       <>
       <div>
-        <input type='text' placeholder='Informe sua nova tarefa...' />
+        <input ref={ textInput } type='text' placeholder='Informe sua nova tarefa...' />
       </div>
-      <button>Adicionar</button>
+      <button onClick={addTaskOnStore}>Adicionar</button>
       </>
     );
   }
-  export default Todo;
+
+  const mapDispatchToProps = (dispatch) => ({
+    addTask: (task) => dispatch(TodoAction.addTask(task))
+  })
+
+  export default connect(null, mapDispatchToProps)(Todo);

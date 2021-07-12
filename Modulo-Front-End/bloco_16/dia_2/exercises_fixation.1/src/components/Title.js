@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
   function Title(props) {
-  return (
+    return (
     <>
       <h2>Todo</h2>
       <h3>Possui {props.counter} Tarefas</h3>
