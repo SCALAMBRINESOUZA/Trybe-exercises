@@ -1,0 +1,36 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.App h2 {
+  color: rgb(71, 1, 94);
+  font-size: 34px;
+  margin-bottom: 0;
+}
+
+.App h3 {
+  color: rgb(71, 1, 94);
+  font-size: 20px;
+}
+
+.App input {
+  border: 1px solid #333;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.App button {
+  font-size: 18px;
+  border: 3px transparent #333;
+  border-radius: 7px;
+  margin-top: 30px;
+  width: 100px;
+} 
+
+.App li {
+  list-style: none;
+  margin-right:35px;
+}
