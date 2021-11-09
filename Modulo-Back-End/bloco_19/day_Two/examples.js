@@ -79,3 +79,7 @@ SELECT 'Carlos' AS 'Nome', 'Henrique' AS 'Sobrenome', 34 AS 'Idade', 'Desenvolve
 /* Monte uma query para encontrar somente os nomes únicos.
   SELECT DISTINCT Idade FROM Escola.Alunos;
 */
+
+/*Quantas senhas temos cadastradas nessa tabela?
+  SELECT COUNT(password) FROM sakila.staff;
+*/
