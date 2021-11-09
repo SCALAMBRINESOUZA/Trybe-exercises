@@ -88,3 +88,6 @@ SELECT 'Carlos' AS 'Nome', 'Henrique' AS 'Sobrenome', 34 AS 'Idade', 'Desenvolve
     SELECT COUNT(DISTINCT first_Name, last_Name) FROM sakila.staff;
 */
 
+/* Quantos emails temos cadastrados nessa tabela?
+    SELECT COUNT(email) FROM sakila.staff;
+*/
