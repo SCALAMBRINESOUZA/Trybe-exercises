@@ -80,6 +80,11 @@ SELECT 'Carlos' AS 'Nome', 'Henrique' AS 'Sobrenome', 34 AS 'Idade', 'Desenvolve
   SELECT DISTINCT Idade FROM Escola.Alunos;
 */
 
-/*Quantas senhas temos cadastradas nessa tabela?
-  SELECT COUNT(password) FROM sakila.staff;
+/* Quantas senhas temos cadastradas nessa tabela?
+    SELECT COUNT(password) FROM sakila.staff;
 */
+
+/* Quantas pessoas temos no total trabalhando para nossa empresa?
+    SELECT COUNT(DISTINCT first_Name, last_Name) FROM sakila.staff;
+*/
+
