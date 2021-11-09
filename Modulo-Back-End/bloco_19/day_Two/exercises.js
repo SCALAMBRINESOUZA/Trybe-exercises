@@ -35,6 +35,12 @@
     SELECT CONCAT('O projeto'," ", Name, " " 'precisou de' " ", Hours, " " 'horas para ser concluído') AS Resultado FROM Scientists.Projects;
 */
 
+/* Escreva uma query para exibir o nome e as horas dos três projetos com a maior quantidade de horas.
+    SELECT Name , Hours From Scientists.Projects
+    ORDER BY HOURS DESC LIMIT 3;
+*/
+
+
 
 
 
