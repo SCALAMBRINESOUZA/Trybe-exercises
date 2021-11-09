@@ -14,3 +14,9 @@ SELECT 'Carlos' AS 'Nome', 'Henrique' AS 'Sobrenome', 34 AS 'Idade', 'Desenvolve
 /* Monte uma query que exiba seu nome na tela;
   SELECT 'Carlos Henrique Scalambrine de Souza';
 */          
+
+/* Monte uma query que exiba seu nome, sobrenome, cidade natal e idade na tela;
+  SELECT 'Carlos', 'Henrique', 'São Paulo', 34;
+*/
+
+
