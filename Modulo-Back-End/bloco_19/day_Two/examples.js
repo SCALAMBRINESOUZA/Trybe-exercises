@@ -50,3 +50,8 @@ SELECT 'Carlos' AS 'Nome', 'Henrique' AS 'Sobrenome', 34 AS 'Idade', 'Desenvolve
   USE sakila;
   SELECT title, description, release_year FROM film;
 */
+
+/* Utilize o SELECT para explorar todas as tabelas do banco de dados.
+  USE sakila;
+  SELECT * FROM sakila.table
+*/          
