@@ -19,4 +19,7 @@ SELECT 'Carlos' AS 'Nome', 'Henrique' AS 'Sobrenome', 34 AS 'Idade', 'Desenvolve
   SELECT 'Carlos', 'Henrique', 'São Paulo', 34;
 */
 
+/* Monte uma query que, além de exibir todas as informações já mencionadas, identifique cada coluna usando o AS , que é chamado de alias na linguagem SQL ( alias é como um apelido no português);
+  SELECT 'Carlos' AS 'Nome', 'Henrique' AS 'Sobrenome', 'São Paulo' AS 'Cidade Natal', 34 AS 'Idade';
+*/
 
