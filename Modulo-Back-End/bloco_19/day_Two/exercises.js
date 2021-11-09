@@ -13,3 +13,4 @@
 /* Escreva uma query para exibir o resultado de uma expressão aritmética qualquer.
     SELECT(2 * 17) AS 'Valor Multiplicado'
 */
+
