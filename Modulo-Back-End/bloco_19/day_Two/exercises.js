@@ -14,3 +14,7 @@
     SELECT(2 * 17) AS 'Valor Multiplicado'
 */
 
+/* Escreva uma query para exibir todas as informações de todos os cientistas.
+    SELECT * FROM Scientists.Scientists;
+*/
+    
