@@ -10,3 +10,7 @@ SELECT 2021 AS 'Ano';
 SELECT 'Carlos', 'Henrique', 34, 'Desenvolvedor Web'; 
 SELECT 'Carlos' AS 'Nome', 'Henrique' AS 'Sobrenome', 34 AS 'Idade', 'Desenvolvedor Web' AS 'Área de atuação';
 */
+
+/* Monte uma query que exiba seu nome na tela;
+  SELECT 'Carlos Henrique Scalambrine de Souza';
+*/          
