@@ -27,6 +27,9 @@
     ORDER BY Name ASC;
 */
 
+/* Escreva uma query para exibir o nome dos Projetos em ordem alfabética descendente.
+    SELECT Name FROM Scientists.Projects
+    ORDER BY Name DESC;
 
 
 
