@@ -46,5 +46,7 @@ SELECT 'Carlos' AS 'Nome', 'Henrique' AS 'Sobrenome', 34 AS 'Idade', 'Desenvolve
   SELECT * FROM rental;
 */
 
-
-
+/* Escreva uma query que exiba o título, a descrição e a data de lançamento dos filmes registrados na tabela film ;
+  USE sakila;
+  SELECT title, description, release_year FROM film;
+*/
