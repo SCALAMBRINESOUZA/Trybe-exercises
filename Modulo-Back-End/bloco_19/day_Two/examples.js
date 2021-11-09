@@ -36,7 +36,10 @@ SELECT 'Carlos' AS 'Nome', 'Henrique' AS 'Sobrenome', 34 AS 'Idade', 'Desenvolve
   SELECT * FROM city;
 */
 
-
+/* Escreva uma query que exiba apenas as colunas first_name e last_name da tabela customer ;
+  USE sakila;        
+  SELECT first_name, last_name FROM customer;
+*/
 
 
 
