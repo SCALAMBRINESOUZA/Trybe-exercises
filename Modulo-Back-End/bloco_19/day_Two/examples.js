@@ -76,3 +76,6 @@ SELECT 'Carlos' AS 'Nome', 'Henrique' AS 'Sobrenome', 34 AS 'Idade', 'Desenvolve
   SELECT DISTINCT Nome FROM Escola.Alunos;
 */
 
+/* Monte uma query para encontrar somente os nomes únicos.
+  SELECT DISTINCT Idade FROM Escola.Alunos;
+*/
