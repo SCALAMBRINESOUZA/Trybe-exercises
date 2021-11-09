@@ -27,4 +27,7 @@ SELECT 'Carlos' AS 'Nome', 'Henrique' AS 'Sobrenome', 34 AS 'Idade', 'Desenvolve
   SELECT 13 * 8;
 */
 
+/* Monte uma query que exiba a data e hora atuais. Dê a essa coluna o nome "Data Atual"
+  SELECT now() AS 'Data Atual';
+*/
 
