@@ -67,4 +67,8 @@ SELECT 'Carlos' AS 'Nome', 'Henrique' AS 'Sobrenome', 34 AS 'Idade', 'Desenvolve
 /* Na tabela sakila.address, monte uma query que exiba a rua e o distrito de cada registro em uma coluna apenas, e dê a essa coluna o nome Endereço.
   SELECT CONCAT(address, " ", district) AS Endereço from sakila.address;
 */
-  
+
+/* Monte uma query para encontrar pares únicos de nomes e idades .
+  SELECT DISTINCT Nome, Idade FROM Escola.Alunos;
+*/
+
