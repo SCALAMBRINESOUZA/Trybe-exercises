@@ -41,6 +41,10 @@ SELECT 'Carlos' AS 'Nome', 'Henrique' AS 'Sobrenome', 34 AS 'Idade', 'Desenvolve
   SELECT first_name, last_name FROM customer;
 */
 
+/* Escreva uma query que exiba todas as colunas da tabela rental ;
+  USE sakila;      
+  SELECT * FROM rental;
+*/
 
 
 
