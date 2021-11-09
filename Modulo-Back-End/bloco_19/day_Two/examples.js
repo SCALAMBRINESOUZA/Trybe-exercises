@@ -55,3 +55,7 @@ SELECT 'Carlos' AS 'Nome', 'Henrique' AS 'Sobrenome', 34 AS 'Idade', 'Desenvolve
   USE sakila;
   SELECT * FROM sakila.table
 */          
+
+/* Na tabela sakila.film , monte uma query que exiba o título e o ano de lançamento dos filmes em uma coluna e dê a ela o nome Lançamento do Filme .
+  SELECT CONCAT(title, " ", release_year) AS 'Lançamento do Filme' from sakila.film;
+*/  
