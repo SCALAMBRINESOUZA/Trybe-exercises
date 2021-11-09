@@ -23,3 +23,8 @@ SELECT 'Carlos' AS 'Nome', 'Henrique' AS 'Sobrenome', 34 AS 'Idade', 'Desenvolve
   SELECT 'Carlos' AS 'Nome', 'Henrique' AS 'Sobrenome', 'São Paulo' AS 'Cidade Natal', 34 AS 'Idade';
 */
 
+/* Qual é o resultado de 13 * 8 ? Descubra usando apenas o SELECT
+  SELECT 13 * 8;
+*/
+
+
