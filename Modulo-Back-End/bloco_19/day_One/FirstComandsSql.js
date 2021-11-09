@@ -20,3 +20,8 @@
     DESCRIBE general_log;
     DESCRIBE help_topic;
 */    
+
+/* Crie um novo banco de dados com o seu nome e depois entre nele!
+    Create DATABASE Carlos;
+    USE Carlos;
+*/    
