@@ -31,3 +31,13 @@ SELECT 'Carlos' AS 'Nome', 'Henrique' AS 'Sobrenome', 34 AS 'Idade', 'Desenvolve
   SELECT now() AS 'Data Atual';
 */
 
+/* Escreva uma query que selecione todas as colunas da tabela city ;
+  USE sakila;
+  SELECT * FROM city;
+*/
+
+
+
+
+
+
