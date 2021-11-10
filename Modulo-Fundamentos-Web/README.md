@@ -2,6 +2,12 @@
 <p>Working with the following stacks:</p>
 <ul>
   <li>1. Unix and Bash</li>
+    <ul>
+      <li>Fundamentals of web development</li>
+      <li>Introduction - <b>Unix and Shell</b></li>
+      <li><b>Unix and Bash</b> Part One</li>
+      <li><b>Unix and Bash</b> Part Two</li>
+    </ul>
   <li>2. Git, Git hub and Internet</li>
   <li>3. Introduction the <b>HTML</b> and <b>CSS</b></li>
   <li>4. Introduction the <b>Javascript</b> and programming logic</li>
