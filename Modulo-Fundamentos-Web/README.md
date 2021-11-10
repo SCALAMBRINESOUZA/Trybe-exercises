@@ -1,5 +1,5 @@
 *<h1>Basics concepts on the web development</h1>*
-<p>Working with the following stacks:</p>
+**<p>Working with the following stacks:</p>**
 <ul>
   <li>1. <b>Unix</b> and <b>Bash</b></li>
     <ul>
