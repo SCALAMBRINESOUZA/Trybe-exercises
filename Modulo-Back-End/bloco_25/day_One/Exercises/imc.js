@@ -23,3 +23,5 @@ const imc = (peso, altura) => {
   }
 }
 imc()
+
+module.exports = imc;

@@ -8,3 +8,4 @@ const averageVelocity = (distance, time) => {
 }
 averageVelocity();
 
+module.exports = averageVelocity;
