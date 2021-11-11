@@ -8,11 +8,13 @@ const prizeDraw = () => {
   
   if (result == kick) {
     console.log("congratulations, correct number!.");
+    console.log('-------------------------------------------------------------------------');
     questionContinuePlay()
   
   } else {
     
     console.log(`Oops, it wasn't this time. the number was ${result}`)
+    console.log('-------------------------------------------------------------------------');
     questionContinuePlay()
   }
 }
@@ -25,3 +27,5 @@ const questionContinuePlay = () => {
 }
 
 prizeDraw();
+
+module.exports = prizeDraw;
