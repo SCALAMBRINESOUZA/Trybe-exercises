@@ -1,4 +1,4 @@
-*<h1>Back-End development concepts</h1>*
+*<h1 align="center">Back-End development concepts</h1>*
 **<p>Working with the following stacks:</p>**
 <ul>
   <li>1. Introduction in the <b>SQL</b></li>
