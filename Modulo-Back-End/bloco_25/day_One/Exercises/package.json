@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "imc": "node imc.js",
-    "velocidade": "node averageVelocity.js"
+    "velocidade": "node averageVelocity.js",
+    "sorteio": "node prizeDraw.js"
   },
   "repository": {
     "type": "git",
