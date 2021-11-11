@@ -24,7 +24,7 @@
  <ul>
    <li>3. Introduction the <b>HTML</b> and <b>CSS</b></li>
      <ul>
-      <li>Introduction - <b>HTML</b and <b>CSS</b></li>
+      <li>Introduction - <b>HTML</b> and <b>CSS</b></li>
       <li><b>HTML</b> and <b>CSS</b> - Structs of pages</li>
       <li><b>HTML</b> and <b>CSS</b> - First steps in the <b>CSS</b></li>
       <li><b>HTML</b> and <b>CSS</b> - Selectors and Positioning</li>
