@@ -8,6 +8,7 @@
     "imc": "node imc.js",
     "velocidade": "node averageVelocity.js",
     "sorteio": "node prizeDraw.js",
+    "fatorial": "node factorial.js",
     "start": "node index.js"
   },
   "repository": {
