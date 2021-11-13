@@ -11,7 +11,7 @@ const resultFactorial = () => {
       return console.log("The number should be greater than zero") 
     } 
   console.log('-------------------------------------------------------------------------');
-     const result = factorial(number)
+     const result = factorial(number).toLocaleString(11.111)
      console.log(result);
 }
 resultFactorial(8)
