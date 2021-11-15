@@ -1,0 +1,17 @@
+{
+  "name": "day_two",
+  "version": "1.0.0",
+  "description": "",
+  "main": "examples.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node examples.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "read-line": "^0.1.2",
+    "readline-sync": "^1.4.10"
+  }
+}
