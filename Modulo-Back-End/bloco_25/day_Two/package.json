@@ -5,7 +5,8 @@
   "main": "examples.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node examples.js"
+    "start": "node examples.js",
+    "Exercises": "node Exercises.js"
   },
   "keywords": [],
   "author": "",
