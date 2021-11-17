@@ -43,11 +43,19 @@ const fs = require('fs').promises;
 
 // readSimpson()
 
-const letsGoRead = async () => {
+// const letsGoRead = async () => {
+//   const simpsons = await fs.readFile('./simpsonFamily.json', 'utf8')
+//   .then((newArray) => JSON.parse(newArray))
+//   return simpsons
+// }
+
+// letsGoRead()
+//   .then((data) => console.log(data))
+
+const addSimpson = async () => {
   const simpsons = await fs.readFile('./simpsonFamily.json', 'utf8')
-  .then((newArray) => JSON.parse(newArray))
-  return simpsons
+    .then((newArray) => JSON.parse(newArray))
+    console.log(simpsons);
 }
 
-letsGoRead()
-  .then((data) => console.log(data))
+addSimpson()
