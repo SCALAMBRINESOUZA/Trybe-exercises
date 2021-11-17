@@ -26,7 +26,7 @@ const fs = require('fs').promises;
 //   .then(data => console.log(data))
 //    .catch(err => console.log(err.message)) 
 
-const teste = async (he = []) => {
+const simspsonFilter = async (he = []) => {
   const simpsons = await fs.readFile('./simpsons.json', 'utf8')
     .then((newArray) => JSON.parse(newArray))
     he = simpsons.filter((simpson) => simpson.id != 10 && simpson.id!= 6)
@@ -34,4 +34,4 @@ const teste = async (he = []) => {
     
   
 }
-teste()
+simspsonFilter()
