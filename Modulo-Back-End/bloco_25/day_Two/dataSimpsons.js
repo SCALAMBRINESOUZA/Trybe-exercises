@@ -26,12 +26,28 @@ const fs = require('fs').promises;
 //   .then(data => console.log(data))
 //    .catch(err => console.log(err.message)) 
 
-const simspsonFilter = async (he = []) => {
-  const simpsons = await fs.readFile('./simpsons.json', 'utf8')
-    .then((newArray) => JSON.parse(newArray))
-    he = simpsons.filter((simpson) => simpson.id != 10 && simpson.id!= 6)
-    console.log(he)
-    
-  
+// const simspsonFilter = async (he = []) => {
+//   const simpsons = await fs.readFile('./simpsons.json', 'utf8')
+//     .then((newArray) => JSON.parse(newArray))
+//     he = simpsons.filter((simpson) => simpson.id != 10 && simpson.id!= 6)
+//     console.log(he)  
+// }
+// simspsonFilter()
+
+// const readSimpson = async () => {
+//   const simpsons = await fs.readFile('./simpsons.json', 'utf8')
+//    .then((newArray) => JSON.parse(newArray))
+//    const simpsonNewFamily = simpsons.splice(0,4)
+//    await fs.writeFile('./simpsonFamily.json', JSON.stringify(simpsonNewFamily))
+// }
+
+// readSimpson()
+
+const letsGoRead = async () => {
+  const simpsons = await fs.readFile('./simpsonFamily.json', 'utf8')
+  .then((newArray) => JSON.parse(newArray))
+  return simpsons
 }
-simspsonFilter()
+
+letsGoRead()
+  .then((data) => console.log(data))
