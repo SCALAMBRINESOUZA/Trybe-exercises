@@ -52,10 +52,23 @@ const fs = require('fs').promises;
 // letsGoRead()
 //   .then((data) => console.log(data))
 
-const addSimpson = async () => {
-  const simpsons = await fs.readFile('./simpsonFamily.json', 'utf8')
-    .then((newArray) => JSON.parse(newArray))
-    console.log(simpsons);
-}
+// const addSimpson = async () => {
+//   const simpsons = await fs.readFile('./simpsonFamily.json', 'utf8')
+//     .then((newArray) => JSON.parse(newArray))
+//           // simpsons.push({"id": "5", "name": "Nelson Muntz"})
+//         // await fs.writeFile('./simpsonFamily.json', JSON.stringify(simpsons));
+//         console.log(simpsons)
 
-addSimpson()
+//  }
+
+// addSimpson()
+
+const updataSimpson = async () => {
+  return await fs.readFile('./simpsons.json', 'utf8')
+   .then((newArray) => JSON.parse(newArray))
+    .then((simpsons) => simpsons.filter((simpson) => simpson.id !== '8'))
+      .then((alterSimpson) => alterSimpson.concat([{ id: '8', name: 'Maggie Simpson'}]))
+        .then((alteredSimpson) => fs.writeFile('./simpsons.json', JSON.stringify(alteredSimpson)))
+          
+  }  
+updataSimpson()
