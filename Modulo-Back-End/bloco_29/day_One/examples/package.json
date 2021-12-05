@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node dipExample.js",
     "test": "mocha tests/unit",
     "lint": "eslint --no-inline-config --ext .js --no-error-on-unmatched-pattern -c .eslintrc.json ."
-
   },
   "keywords": [],
   "author": "",
@@ -17,5 +17,9 @@
     "eslint-config-trybe-backend": "^1.0.4",
     "mocha": "^9.1.3",
     "sinon": "^12.0.1"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "node-fetch": "^2.6.5"
   }
 }
