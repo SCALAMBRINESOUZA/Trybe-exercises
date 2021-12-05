@@ -5,6 +5,7 @@ const GRADE_DICT = {
   7: 'C',
   6: 'D',
   1: 'E',
+  0: 'Z',
 };
 
 const gradeKeys = Object.keys(GRADE_DICT);
