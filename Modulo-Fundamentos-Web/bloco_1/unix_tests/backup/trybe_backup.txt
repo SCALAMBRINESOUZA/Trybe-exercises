@@ -1,0 +1,5 @@
+Comandos utilizados para criar diretorios e arquivos e navegar entres os mesmos;
+
+Crie um arquivo de texto com o nome trybe.txt
+touch trybe.txt
+
