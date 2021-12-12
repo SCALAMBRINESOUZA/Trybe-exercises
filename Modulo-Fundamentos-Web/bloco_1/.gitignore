@@ -1,2 +1,11 @@
 .vscode
 Dicas.txt
+/node_modules
+/.pnp
+.pnp.js
+/coverage
+/build
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
