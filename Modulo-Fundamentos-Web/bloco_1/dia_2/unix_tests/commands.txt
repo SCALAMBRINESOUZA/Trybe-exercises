@@ -27,3 +27,13 @@ cat phrases2.txt skills2.txt > bunch_of_things.txt
 
 Ordene o arquivo bunch_of_things.txt
 sort bunch_of_things.txt
+
+Mude a permissão do arquivo bunch_of_things.txt para que todos os usuários possam ter acesso à leitura e escrita, e verifique se está correto com o comando ls -l;
+chmod a+rw bunch_of_things.txt
+
+Tire a permissão de escrita do arquivo bunch_of_things.txt para todos os usuários, verifique se está correto com o comando ls -l ;
+chmod a-w bunch_of_things.txt
+
+
+
+
