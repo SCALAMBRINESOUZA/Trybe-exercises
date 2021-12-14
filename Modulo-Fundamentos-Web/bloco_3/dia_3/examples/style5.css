@@ -22,3 +22,11 @@ li em{
     font-size: 20px;
     font-weight: 600;
 }
+
+ul.firstThree li:nth-child(-n+3){
+    color: blue;
+}
+
+ul.firstThree li:nth-last-of-type(3){
+    color: pink;
+}
