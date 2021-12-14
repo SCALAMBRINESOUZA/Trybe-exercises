@@ -2,7 +2,10 @@ h1, p {
   text-align: center;
 }
 
-ol :hover{
-  background-color: cadetblue;
-  transition: 1s;
+ol li:hover {
+  background-color: blue;
+}
+
+ol li:active {
+  color: yellow;
 }
