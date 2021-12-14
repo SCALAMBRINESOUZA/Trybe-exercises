@@ -1,0 +1,33 @@
+div:first-of-type{
+    background-color: darkorange;
+    color:darkgreen
+}
+
+div:nth-of-type(2){
+    background-color: blueviolet;
+    color:burlywood
+}
+
+div:nth-of-type(3){
+    background-color: chartreuse;
+    color: white;
+    padding: 5px;
+}
+
+div:nth-of-type(4){
+    background-color: black;
+    color:aqua
+}
+
+div:last-of-type{
+    background-color: yellow;
+    color:violet
+}
+
+h3:nth-child(odd){
+    font-style: italic
+}
+
+div:hover{
+    border: dashed;
+}
