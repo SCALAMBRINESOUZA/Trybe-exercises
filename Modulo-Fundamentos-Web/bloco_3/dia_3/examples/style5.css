@@ -17,3 +17,8 @@ h1.unique{
     font-size: 40px;
     border: solid 1px black;
 }
+
+li em{
+    font-size: 20px;
+    font-weight: 600;
+}
