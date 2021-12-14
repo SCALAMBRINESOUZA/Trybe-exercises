@@ -27,6 +27,33 @@ ul.firstThree li:nth-child(-n+3){
     color: blue;
 }
 
-ul.firstThree li:nth-last-of-type(3){
+ul.firstThree li:nth-of-type(3){
     color: pink;
 }
+
+ul.links li:hover:first-child{
+    font-weight: 600;
+    color: orange;
+}
+
+ul.links li:hover:nth-of-type(2){
+    font-weight: 600;
+    color: green;
+}
+
+ul.links li:hover:nth-of-type(3){
+    font-weight: 600;
+    color: black;
+}
+
+ul.links li:hover:nth-of-type(4){
+    font-weight: 600;
+    color: yellow;
+}
+
+ul.links li:hover:last-of-type{
+    font-weight: 600;
+    color: green;
+}
+
+
