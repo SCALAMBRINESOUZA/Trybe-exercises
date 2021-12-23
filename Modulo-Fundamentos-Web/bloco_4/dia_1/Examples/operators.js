@@ -16,3 +16,8 @@
 
 // Crie uma constante chamada "currentHour" que recebe um número entre 4 e 24 de sua escolha, para representar as horas do dia.
 const currentHour = 24;
+
+// Crie uma variável chamada "message" que, inicialmente, é uma string vazia.
+let message = ''; 
+
+
