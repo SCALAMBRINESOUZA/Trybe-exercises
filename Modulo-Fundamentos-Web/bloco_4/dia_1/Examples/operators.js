@@ -15,10 +15,10 @@
 // }
 
 // Crie uma constante chamada "currentHour" que recebe um número entre 4 e 24 de sua escolha, para representar as horas do dia.
-const currentHour = 4;
+// const currentHour = 4;
 
 // Crie uma variável chamada "message" que, inicialmente, é uma string vazia.
-let message = ''; 
+// let message = ''; 
 
 /*
 Implemente condicionais para que:
@@ -29,16 +29,19 @@ Se o horário estiver entre 11 e 14, insira "Hora do almoço!!!" na variável "m
 Se o horário estiver entre 4 e 11, insira "Hmmm, cheiro de café recém passado" na variável "message".
 */
 
-if(currentHour >= 22) {
-  message = 'Não deveríamos comer nada, é hora de dormir';
-} else if(currentHour >= 18 && currentHour < 22) {
-  message = 'Rango da noite, vamos jantar';
-} else if(currentHour >= 14 && currentHour < 18) {
-  message = 'Vamos fazer um bolo pro café da tarde?';
-} else if(currentHour >= 11 && currentHour <= 14) {
-  message = 'Hora do almoço!!!';
-} else if(currentHour >= 4 && currentHour <= 11) {
-  message = 'Hmmm, cheiro de café recém passado'
-}
+// if(currentHour >= 22) {
+//   message = 'Não deveríamos comer nada, é hora de dormir';
+// } else if(currentHour >= 18 && currentHour < 22) {
+//   message = 'Rango da noite, vamos jantar';
+// } else if(currentHour >= 14 && currentHour < 18) {
+//   message = 'Vamos fazer um bolo pro café da tarde?';
+// } else if(currentHour >= 11 && currentHour <= 14) {
+//   message = 'Hora do almoço!!!';
+// } else if(currentHour >= 4 && currentHour <= 11) {
+//   message = 'Hmmm, cheiro de café recém passado'
+// }
 
-console.log(message);
+// console.log(message);
+
+// Crie uma variável chamada "weekDay" que recebe a string "quarta-feira".
+let weekDay = 'quarta-feira';
