@@ -48,3 +48,17 @@ for(let index = 0; index < numbers.length; index += 1) {
     }
 }
 console.log(maxValue);
+
+// Descubra quantos valores ímpares existem no array e imprima o resultado.Caso não exista nenhum, imprima a mensagem: "nenhum valor ímpar encontrado"
+let numbers = [6, 2, 4, 18, 70, 8, 100, 2, 34, 26];
+let numbersOdd = 0;
+for (let index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] % 2 !== 0) {
+        numbersOdd += 1;
+    } 
+}
+    if(numbersOdd === 0) {
+      console.log('nenhum valor ímpar encontrado');
+    } else {
+        console.log(numbersOdd);
+    }
