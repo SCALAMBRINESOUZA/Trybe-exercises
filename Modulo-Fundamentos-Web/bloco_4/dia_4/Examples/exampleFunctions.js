@@ -35,3 +35,16 @@ console.log(multiply(10, 20));
 console.log(div(30, 20));
 console.log(mod(20, 10));
 
+// Faça um programa que retorne o maior de dois números.Defina no começo do programa duas constantes com os valores que serão comparados, observação programas refatoradas para usar funções
+
+function biggestNumber(number1, number2) {
+  if (number1 > number2) {
+    return `${number1} é maior`
+  } else if (number2 > number1) {
+    return `${number2} é maior`
+  } else {
+    return `${number1} e ${number2} são iguais`
+  }
+}
+
+console.log(biggestNumber(30, 30))
