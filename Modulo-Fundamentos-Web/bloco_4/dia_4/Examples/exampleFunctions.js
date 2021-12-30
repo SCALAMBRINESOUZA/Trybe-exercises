@@ -48,3 +48,19 @@ function biggestNumber(number1, number2) {
 }
 
 console.log(biggestNumber(30, 30))
+
+// Faça um programa que retorne o maior de três números.Defina no começo do programa três constantes com os valores que serão comparados.
+
+function biggestNumberWithThree(number1, number2, number3) {
+  if (number1 > number2 && number1 > number3) {
+    return `${number1} é maior`
+  } else if (number2 > number1 && number2 > number3) {
+    return `${number2} é maior`
+  } else if (number3 > number1 && number3 > number2) {
+    return `${number3} é maior`
+  } else {
+    return `${number1} , ${number2} e ${number3} são iguais`
+  }
+}
+
+console.log(biggestNumberWithThree(10,10,10))
