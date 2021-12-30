@@ -49,7 +49,7 @@ function biggestNumber(number1, number2) {
 
 console.log(biggestNumber(30, 30))
 
-// Faça um programa que retorne o maior de três números.Defina no começo do programa três constantes com os valores que serão comparados.
+// Faça um programa que retorne o maior de três números.Defina no começo do programa três constantes com os valores que serão comparados, observação programas refatoradas para usar funções
 
 function biggestNumberWithThree(number1, number2, number3) {
   if (number1 > number2 && number1 > number3) {
@@ -64,3 +64,18 @@ function biggestNumberWithThree(number1, number2, number3) {
 }
 
 console.log(biggestNumberWithThree(10,10,10))
+
+// Faça um programa que, dado um valor definido numa constante, retorne "positive" se esse valor for positivo, "negative" se for negativo e "zero" caso contrário, observação programas refatoradas para usar funções
+
+function positiveOrFalse(n) {
+  if(n > 0) {
+    return 'positive'
+  } else if(n < 0) {
+    return 'negative'
+  } else {
+    return 'zero'
+  }
+}
+
+console.log(positiveOrFalse(0))
+
