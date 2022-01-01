@@ -10,6 +10,17 @@ let info = {
 
 // Insira no objeto uma nova propriedade com o nome de chave 'recorrente' e o valor 'Sim' e, em seguida, imprima o objeto no console.Valor esperado no console:
 
-info['recorrente'] = 'Sim';
+ info['recorrente'] = 'Sim';
 
-console.log(info);
+// console.log(info);
+
+// Faça um for/in que mostre todas as chaves do objeto. Valor esperado no console:
+
+for(let infos in info) {
+  console.log(infos);
+};
+
+
+
+
+
