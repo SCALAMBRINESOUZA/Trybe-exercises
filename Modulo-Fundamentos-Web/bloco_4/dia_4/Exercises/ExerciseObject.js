@@ -16,8 +16,14 @@ let info = {
 
 // Faça um for/in que mostre todas as chaves do objeto. Valor esperado no console:
 
-for(let infos in info) {
-  console.log(infos);
+// for (let infos in info) {
+//   console.log(infos);
+// };
+
+// Faça um novo for/in , mas agora mostre todos os valores das chaves do objeto. Valor esperado no console:
+
+for (let infos in info) {
+  console.log(info[infos]);
 };
 
 
