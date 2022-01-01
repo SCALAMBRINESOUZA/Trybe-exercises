@@ -22,10 +22,26 @@ let info = {
 
 // Faça um novo for/in , mas agora mostre todos os valores das chaves do objeto. Valor esperado no console:
 
-for (let infos in info) {
-  console.log(info[infos]);
+// for (let infos in info) {
+//   console.log(info[infos]);
+// };
+
+// Agora, defina um segundo objeto com a mesma estrutura(as mesmas chaves) do primeiro e os seguintes valores: 'Tio Patinhas', 'Christmas on Bear Mountain, Dell's Four Color Comics #178', 'O último MacPatinhas', 'Sim'. Então, imprima os valores de cada objeto juntos de acordo com cada uma das chaves. Valor esperado no console:
+
+let infoII = {
+  personagem: 'Tio Patinhas',
+  origem: 'Christmas on Bear Mountain, Dells Four Color Comics #178',
+  nota: 'O último MacPatinhas',
+  recorrente: 'Sim',
 };
 
+function verification() {
+  if (info.recorrente === 'Sim' && infoII.recorrente === 'Sim') {
+    return 'Ambos recorrentes'
+  }
+}
+
+console.log(`${info.personagem} e ${infoII.personagem} ${info.origem} e ${infoII.origem} ${info.nota} e ${infoII.nota}`, verification())
 
 
 
