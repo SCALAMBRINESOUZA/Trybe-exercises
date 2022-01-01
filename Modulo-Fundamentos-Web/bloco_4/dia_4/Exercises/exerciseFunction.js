@@ -16,14 +16,27 @@
 
 // Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
 
-function biggestValue(testArray) {
-  let largerIndex = 0;
-  for(let index in testArray) {
-      if (testArray[largerIndex] < testArray[index]) {
-        largerIndex = index
-      }
-    }
-    return largerIndex;
-  }
+// function biggestValue(testArray) {
+//   let largerIndex = 0;
+//   for(let index in testArray) {
+//       if (testArray[largerIndex] < testArray[index]) {
+//         largerIndex = index
+//       }
+//     }
+//     return largerIndex;
+//   }
 
-console.log(biggestValue([2, 13, 6, 7, 10, 11]))
+// console.log(biggestValue([2, 13, 6, 7, 10, 11]))
+
+// Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+
+function smallerValue(testArray) {
+  let largerIndex = 0;
+  for (let index in testArray) {
+    if (testArray[largerIndex] > testArray[index]) {
+      largerIndex = index
+    }
+  }
+  return largerIndex;
+}
+console.log(smallerValue([2, 4, 6, 7, 10, 0, -3]))
