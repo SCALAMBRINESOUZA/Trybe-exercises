@@ -98,3 +98,14 @@
 // }
 
 // console.log(maisRepetido([2, 3, 3, 5, 8, 2, 3])); //2
+
+// Crie uma função que receba um número inteiro N e retorne o somatório de todos os números de 1 até N.
+
+function sumNumber(number) {
+    let sum = 0;
+      for(let i = 1; i <= number; i += 1) {
+        sum = sum + i;
+      }
+      return sum
+    }
+console.log(sumNumber(5))
