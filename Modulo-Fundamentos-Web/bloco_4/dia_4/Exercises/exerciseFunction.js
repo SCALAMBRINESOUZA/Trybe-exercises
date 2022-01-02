@@ -101,11 +101,28 @@
 
 // Crie uma função que receba um número inteiro N e retorne o somatório de todos os números de 1 até N.
 
-function sumNumber(number) {
-    let sum = 0;
-      for(let i = 1; i <= number; i += 1) {
-        sum = sum + i;
-      }
-      return sum
-    }
-console.log(sumNumber(5))
+// function sumNumber(number) {
+//     let sum = 0;
+//       for(let i = 1; i <= number; i += 1) {
+//         sum = sum + i;
+//       }
+//       return sum
+//     }
+// console.log(sumNumber(5))
+
+// Crie uma função que receba uma string word e outra string ending.Verifique se a string ending é o final da string word.Considere que a string ending sempre será menor que a string word.
+
+function compareWord(stringA, stringB) {
+ stringA = stringA.split('');
+ stringB = stringB.split('');
+ let control = true;
+
+ for(let i = 0; i < stringB.length; i += 1) {
+   if (stringA[stringA.length - stringB.length + i] != stringB[i]) {
+     control = false
+   }
+ }
+ return control
+}
+
+console.log(compareWord('carlos', 'car'))
