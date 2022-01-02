@@ -30,13 +30,27 @@
 
 // Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
 
-function smallerValue(testArray) {
-  let largerIndex = 0;
-  for (let index in testArray) {
-    if (testArray[largerIndex] > testArray[index]) {
-      largerIndex = index
+// function smallerValue(testArray) {
+//   let largerIndex = 0;
+//   for (let index in testArray) {
+//     if (testArray[largerIndex] > testArray[index]) {
+//       largerIndex = index
+//     }
+//   }
+//   return largerIndex;
+// }
+// console.log(smallerValue([2, 4, 6, 7, 10, 0, -3]))
+
+// Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres
+
+function biggestName(testArray) {
+  let maxCount = testArray[0];
+  for (let char of testArray) {
+      if(maxCount.length < char.length) {
+        maxCount = char
+      }        
     }
-  }
-  return largerIndex;
-}
-console.log(smallerValue([2, 4, 6, 7, 10, 0, -3]))
+      console.log(maxCount)
+    }
+  
+biggestName(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'])
