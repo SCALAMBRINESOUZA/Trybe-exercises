@@ -74,6 +74,31 @@
 # nome ao conjunto utilizando um dos métodos vistos acima. 
 # Depois, imprima a variável e confira se o retorno é: {'seu_nome'}.
 
-my_name = set()
-my_name.add("Carlos")
-print(my_name)
+# my_name = set()
+# my_name.add("Carlos")
+# print(my_name)
+
+
+info = {
+  "personagem": "Margarida",
+  "origem": "Pato Donald",
+  "nota": "Namorada do personagem principal nos quadrinhos do Pato Donald",
+}
+
+# Exercício 8: O que acontecerá se você tentar acessar o valor da chave "personagem" como fazíamos em JavaScript, utilizando object.key ?
+
+# Erro de sintaxe não é possivel acessar um objeto em python desse modo
+
+# Exercício 9: Insira no objeto uma nova propriedade com o nome de chave "recorrente" e o valor "Sim". Em seguida, imprima o objeto no console.
+
+# new_atribute = {'recorrente': 'Sim'}
+# info.update(new_atribute)
+# # info['recorrente'] = 'Sim'
+# print(info)
+
+# Exercício 10: Remova a propriedade cuja chave é "origem" e imprima o objeto no console.
+
+# info.pop("origem")
+# del info["origem"]
+# print(info)
+
