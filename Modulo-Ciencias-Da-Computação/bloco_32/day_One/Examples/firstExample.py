@@ -40,7 +40,12 @@
 # Erro E703 => statement ends with a semicolon
 
 # Five Example
-# Suponha que o preço de capa de um livro seja 24,20, mas as livrarias recebem um desconto de 40%. O transporte custa 3,00 para o primeiro exemplar e 75 centavos para cada exemplar adicional. Qual é o custo total de atacado para 60 cópias? Escreva uma expressão que receba o custo total e a imprima.
+# Suponha que o preço de capa de um livro seja 24,20
+# mas as livrarias recebem um desconto de 40%.
+# O transporte custa 3,00 para o primeiro exemplar
+# e 75 centavos para cada exemplar adicional.
+# Qual é o custo total de atacado para 60 cópias?
+# Escreva uma expressão que receba o custo total e a imprima.
 
 # price_Book = 24.2
 # descount = (1 - 0.4) * price_Book
@@ -62,16 +67,16 @@
 # #Exercício 5: Adicione o elemento "Ciência da Computação" à lista.
 # trybe_course.append("Ciência da Computação" )
 
-# #Exercício 6: Acesse e altere o primeiro elemento 
+# #Exercício 6: Acesse e altere o primeiro elemento
 # da lista para "Fundamentos".
 # trybe_course[0] = "Fundamentos"
 
 # print(trybe_course)
 
-#Exercício 7: Um conjunto ou set pode ser inicializado utilizando-se 
-# também o método set() . 
-# Inicialize uma variável com essa função var = set() e adicione seu 
-# nome ao conjunto utilizando um dos métodos vistos acima. 
+# Exercício 7: Um conjunto ou set pode ser inicializado utilizando-se
+# também o método set().
+# Inicialize uma variável com essa função var = set() e adicione seu
+# nome ao conjunto utilizando um dos métodos vistos acima.
 # Depois, imprima a variável e confira se o retorno é: {'seu_nome'}.
 
 # my_name = set()
@@ -79,32 +84,44 @@
 # print(my_name)
 
 
-info = {
-  "personagem": "Margarida",
-  "origem": "Pato Donald",
-  "nota": "Namorada do personagem principal nos quadrinhos do Pato Donald",
-}
+# info = {
+#   "personagem": "Margarida",
+#   "origem": "Pato Donald",
+#   "nota": "Namorada do personagem principal nos quadrinhos do Pato Donald",
+# }
 
-# Exercício 8: O que acontecerá se você tentar acessar o valor da chave "personagem" como fazíamos em JavaScript, utilizando object.key ?
+# Exercício 8: O que acontecerá se você tentar acessar o valor
+# da chave "personagem" como fazíamos em JavaScript
+# utilizando object.key ?
 
-# Erro de sintaxe não é possivel acessar um objeto em python desse modo
+# Erro de sintaxe não é possivel acessar
+# um objeto em python desse modo
 
-# Exercício 9: Insira no objeto uma nova propriedade com o nome de chave "recorrente" e o valor "Sim". Em seguida, imprima o objeto no console.
+# Exercício 9: Insira no objeto uma nova propriedade
+# com o nome de chave "recorrente" e o valor "Sim".
+# Em seguida, imprima o objeto no console.
 
 # new_atribute = {'recorrente': 'Sim'}
 # info.update(new_atribute)
 # # info['recorrente'] = 'Sim'
 # print(info)
 
-# Exercício 10: Remova a propriedade cuja chave é "origem" e imprima o objeto no console.
+# Exercício 10: Remova a propriedade cuja chave é
+# "origem" e imprima o objeto no console.
 
 # info.pop("origem")
 # del info["origem"]
 # print(info)
 
-# Exercício 11: Após uma consulta do banco de dados, temos linhas que contém nome, sobrenome e idade como: "Thiago", "Nobre", 29 . Que estrutura vista anteriormente seria recomendada dado que após esta consulta somente exibimos estes valores.
-#tuple
+# Exercício 11: Após uma consulta do banco de dados
+# temos linhas que contém nome, sobrenome e idade como:
+# "Thiago", "Nobre", 29 . Que estrutura vista anteriormente
+# seria recomendada dado que após
+# esta consulta somente exibimos estes valores.
+# tuple
 
-
-# Exercício 12: Realizar a contagem de quantas vezes cada elemento aparece em uma sequência é uma técnica muito útil na solução de alguns problemas. Qual é a estrutura mais recomendada para o armazenamento desta contagem?
+# Exercício 12: Realizar a contagem de quantas vezes
+# cada elemento aparece em uma sequência é uma técnica
+# muito útil na solução de alguns problemas.
+# Qual é a estrutura mais recomendada para o armazenamento desta contagem?
 # Dict
