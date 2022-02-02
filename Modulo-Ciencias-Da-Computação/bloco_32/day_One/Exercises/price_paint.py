@@ -6,4 +6,5 @@ def paint_costs(area):
         required_cans += 1
     return required_cans, required_cans * can_price
 
-print(paint_costs(200))    
+
+print(paint_costs(200))
