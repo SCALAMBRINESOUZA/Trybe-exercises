@@ -6,6 +6,7 @@
 
       ul {
         background-color: palegreen;
+        list-style:lower-greek;
       }
 
       .modifyColor {
@@ -24,6 +25,7 @@
         line-height: 2;
         text-align:justify;
         text-decoration:overline;
+        background-color:#A2A09B;
       }
 
       #yellow {
