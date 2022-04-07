@@ -1,9 +1,19 @@
-ol li:nth-child(even) {
+/* ol li:nth-child(even) {
     background-color: yellow;
     color: green;
 }
 
 ol li:nth-child(odd) {
+    background-color: yellow;
+    text-transform: uppercase;
+} */
+
+.list-ordered .item-even  {
+    background-color: yellow;
+    color: green;
+}
+
+.list-ordered .item-odd {
     background-color: yellow;
     text-transform: uppercase;
 }
@@ -16,19 +26,36 @@ h1, h3 {
 h1.unique{
     font-size: 40px;
     border: solid 1px black;
+    text-align: center;
 }
 
+/* 
 li em{
     font-size: 20px;
     font-weight: 600;
+} */
+
+ol li {
+    font-size: 20px;
+    font-weight: bold;
 }
 
-ul.firstThree li:nth-child(-n+3){
+/* ul.firstThree li:nth-child(-n+3){
     color: blue;
 }
 
 ul.firstThree li:nth-of-type(3){
     color: pink;
+} */
+
+.first-three .color-blue {
+    color: blue;
+}
+
+.first-three .color-pink {
+    color: blue;
+    background-color: pink;
+    width: 50px;
 }
 
 ul.links li:hover:first-child{
