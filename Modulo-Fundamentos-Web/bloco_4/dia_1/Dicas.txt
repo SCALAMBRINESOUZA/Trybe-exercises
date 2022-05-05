@@ -1,0 +1,4 @@
+Para executarmos o javaScript inicialmente precisamos instalar o node, após o node instalado
+utilizaremos um plugin Code runner necessario para executarmos nossos codigos java script,
+declaração de variavel quando queremos usar nomes compostos usamos o conceito de camel case
+ao selecionarmos uma parte do codigo podemos identa-lo usando shift + tab
