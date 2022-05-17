@@ -1,0 +1,150 @@
+#main {
+  background-color: rgba(4, 4, 99, 0.979);
+  border: 3px solid gray;
+  box-shadow: 0 0 1em blue;
+  text-align: center;
+  height: 400px;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 35px;
+}
+
+h1 {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 800;
+}
+
+#center {
+  background-color: white;
+  height: 50%;
+  padding: 20px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 1em white;
+  border-radius: 10px;
+
+}
+
+p {
+  color: white;
+  line-height: 20px;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+#form_count {
+  width: 50%;
+  height: 50%;
+}
+
+#form {
+width: auto;
+height: auto;
+}
+
+button {
+  margin: 10px;
+}
+
+/* #start {
+  margin-top: -19px;
+  position: absolute;
+  margin-left: 43px;
+}
+
+#l_id {
+  margin-top: 20px;
+  position: relative;
+}
+
+#end {
+  margin-left: 40px;
+  margin-top: -12px;
+  position: absolute;
+}
+
+#form_count label {
+  margin-right: 160px;
+}
+
+#end {
+  margin-top: -10px;
+  margin-left: 55px;
+}
+
+/* #login {
+  position: absolute;
+}
+#editor-login {
+  margin-left: 10px;
+  margin-top: -20px;
+} */
+/* 
+
+.inputs {
+  margin-left: 110px;
+  position: absolute;
+}
+
+#ini {
+  margin-top: -18px;
+}
+
+#l_id {
+  margin-top: 30px;
+  line-height: 30px;
+}  */
+/* 
+.inputs {
+  margin-right: -200px;
+} */
+
+/* #form {
+  position: absolute;
+}
+
+#ini {
+  position: absolute;
+}
+
+#ste #step {
+  margin-left: 35px;
+  position: absolute;
+  margin-top: 15px;
+}
+
+#ste label {
+  margin-top: 15px;
+  position: absolute;
+}
+ 
+#en #end {
+  position:absolute;
+  margin-left: 20px;
+  margin-top: 13px;
+  
+}
+
+#en label {
+  position: absolute;
+}
+
+#ste {
+  margin-top: 80px;
+}
+
+/* #ini #start {
+  position:absolute;
+  margin-left: 20px;
+  margin-top: 13px;
+} */
+/* 
+#en {
+  margin-top: 15px;
+} */
