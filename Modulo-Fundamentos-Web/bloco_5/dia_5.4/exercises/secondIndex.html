@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <script>
+        let h1 = document.createElement('h1')
+        h1.innerText = 'Armazenado no local storage'
+        h1.style.fontSize = '30px'
+        h1.style.textAlign = 'center'
+        h1.style.color = 'magenta'
+        let p = document.createElement('p')
+        p.style.fontSize = '15px'
+        p.style.textAlign = 'center'
+        p.innerText = 'Aplicando os conceitos de local storage no browser do cliente'
+        p.style.color = 'magenta'
+        let div = document.getElementsByTagName('div')[0]
+        div.style.border = '3px dashed brown'
+        div.style.height = '300px'
+        document.body.appendChild(div)
+        
+        let btnYellow = document.createElement('button')
+        btnYellow.style.background = 'yellow'
+        btnYellow.textContent = 'yellow'
+        btnYellow.style.color = 'green'
+        document.body.appendChild(btnYellow)
+
+        let btnGreen = document.createElement('button')
+        btnGreen.style.background = 'green'
+        btnGreen.textContent = 'green'
+        btnGreen.style.color = 'yellow'
+        document.body.appendChild(btnGreen)
+
+        let btnBlue = document.createElement('button')
+        btnBlue.style.background = 'blue'
+        btnBlue.textContent = 'blue'
+        btnBlue.style.color = 'white'
+        document.body.appendChild(btnBlue)
+
+        btnYellow.addEventListener('click', () => {
+            div.style.backgroundColor = 'yellow'
+            localStorage.setItem('background', btnYellow.textContent)
+            h1.style.color = 'green'
+            localStorage.setItem('h1', h1.innerText)
+            p.style.color = 'green'
+            localStorage.setItem('p', p.innerText)
+            div.appendChild(h1)
+            div.appendChild(p)
+            
+        })
+        
+        btnGreen.addEventListener('click', () => {
+            let span = document.getElementById('ola')
+            div.style.background = 'green'
+            localStorage.setItem('background', btnGreen.textContent)
+            h1.style.color = 'yellow'
+            localStorage.setItem('h1', h1.innerText)
+            p.style.color = 'yellow'
+            localStorage.setItem('p', p.innerText)
+            div.appendChild(h1)
+            div.appendChild(p)
+            
+        })
+        
+        btnBlue.addEventListener('click', () => {
+            div.style.background = 'blue'
+            localStorage.setItem('background', btnBlue.textContent)
+            h1.style.color = 'white'
+            p.style.color = 'white'
+            localStorage.setItem('h1', h1.innerText)
+            localStorage.setItem('p', p.innerText)
+            div.appendChild(h1)
+            div.appendChild(p)
+           
+        })
+
+        window.onload = () => {
+             let color = localStorage.getItem('background')
+               if(color != div.style.background) {
+                div.style.background = color                
+            }
+             let font = localStorage.getItem('h1')  
+             let paragraph = localStorage.getItem('p')   
+             h1.innerText = font
+             p.innerText = paragraph
+             div.appendChild(h1)     
+             div.appendChild(p)                  
+             
+        }
+    </script>
+</body>
+</html>
