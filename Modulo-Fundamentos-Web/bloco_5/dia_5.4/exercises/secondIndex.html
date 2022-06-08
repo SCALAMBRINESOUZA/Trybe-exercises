@@ -70,9 +70,9 @@
         btnBlue.addEventListener('click', () => {
             div.style.background = 'blue'
             localStorage.setItem('background', btnBlue.textContent)
+            localStorage.setItem('h1', h1.innerText)
             h1.style.color = 'white'
             p.style.color = 'white'
-            localStorage.setItem('h1', h1.innerText)
             localStorage.setItem('p', p.innerText)
             div.appendChild(h1)
             div.appendChild(p)
@@ -83,14 +83,7 @@
              let color = localStorage.getItem('background')
                if(color != div.style.background) {
                 div.style.background = color                
-            }
-             let font = localStorage.getItem('h1')  
-             let paragraph = localStorage.getItem('p')   
-             h1.innerText = font
-             p.innerText = paragraph
-             div.appendChild(h1)     
-             div.appendChild(p)                  
-             
+            } 
         }
     </script>
 </body>
